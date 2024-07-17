@@ -1,5 +1,5 @@
 'use client'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -57,11 +57,16 @@ function Slide({heading, img, alt, subheading} : SlideProps) {
 function Slider() {
   return (
     <Swiper
-      modules={[Navigation, Pagination]}
-      slidesPerView={1}
-      spaceBetween={20}
+      modules={[Navigation, Pagination, Autoplay]}
+      slidesPerView={1.5}
+      spaceBetween={0}
       centeredSlides={true}
       navigation={true}
+      loop={true}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       pagination={{
         dynamicBullets: true,
         clickable: true

@@ -17,7 +17,7 @@ const config: Config = {
         "default-padding": "100px 250px"
       },
       colors: {
-        "gray-1": "353535",
+        "gray-1": "#353535",
         "gray-2": "#666666",
         "gray-3": "#CCCCCC",
         "gray-4": "#EEEEEE",

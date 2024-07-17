@@ -1,9 +1,16 @@
 import SectionOne from "./sections/SectionOne"
+import SectionTwo from "./sections/SectionTwo"
+
+
 
 export default function Home() {
-  return (
-    <div className="w-full h-full">
-      <SectionOne /> 
+
+  console.log('bombom')
+
+  return ( 
+    <div className="min-h-screen w-full">
+      <SectionOne/>
+      <SectionTwo />
     </div>
   )
 }

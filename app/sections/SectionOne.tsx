@@ -4,7 +4,7 @@ import { Button } from "@/app/global-components/Buttons"
 
 export default function SectionOne() {
   return (
-    <div className="w-full h-[750px] bg-cyan-500  text-white p-default-padding flex items-center">
+    <div className="w-full h-[750px] from-gray-1 to-transparent to-70% bg-gradient-to-r  bg-cyan-500  text-white p-default-padding flex items-center">
       <div className="flex flex-col gap-6 max-w-[500px]">
         <h1 className="text-3xl font-semibold leading-none">Get help from our expert consultants.</h1>
         <p>{introBannerText}</p>

@@ -50,7 +50,6 @@ export default function SectionThree() {
           }
         </div>
       </div>
-
     </div>
   )
 }

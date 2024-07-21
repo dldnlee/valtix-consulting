@@ -16,6 +16,15 @@ const config: Config = {
       padding:  {
         "default-padding": "100px 250px"
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+            from: { transform: 'translateX(0)' },
+            to: { transform: 'translateX(-100%)' },
+        }
+      },    
       colors: {
         "gray-1": "#353535",
         "gray-2": "#666666",

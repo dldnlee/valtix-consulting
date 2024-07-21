@@ -1,0 +1,14 @@
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.sliding-banner {
+  animation: swipe 2000 linear infinite backwards;
+}

@@ -37,11 +37,11 @@ export default function SectionThree() {
   return (
     <div className="flex flex-col gap-4 py-[100px]">
       <div className="text-center flex flex-col justify-center items-center gap-4 pb-20">
-        <h2 className="text-2xl font-extrabold">Why you should choose us?</h2>
+        <h2 className="text-2xl font-extrabold">Why choose us?</h2>
         <p className="max-w-[600px]">Origin Consulting Group stands out for its specialized focus on startups and medium-sized businesses, combining sector-specific insights with a personalized approach to consulting.</p>
       </div>
       <div className="w-full h-full flex gap-10 justify-center items-center">
-        <div className="min-w-[723px] min-h-[436px] bg-gray-3 rounded-lg"></div>
+        <iframe width="723" height="436" src="https://www.youtube.com/embed/VCPGMjCW0is?si=gm5rW4C-WEHsvGit" title="Origin Promotional Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         <div className="flex flex-col gap-14">
           {
             sellingPoints.map((item, index) => (

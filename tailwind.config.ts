@@ -11,10 +11,11 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       padding:  {
-        "default-padding": "60px 250px"
+        "default-padding": "60px 250px",
+        
       },
       keyframes: {
         'infinite-scroll': {
@@ -36,11 +37,11 @@ const config: Config = {
         "4xl": "4rem",
         "3xl": "3rem",
         "2xl": "2rem",
-        "xl": "1rem",
-        "lg": ".7rem",
-        "md": ".5rem",
-        "sm": ".4rem",
-        "xs": ".3rem"
+        "xl": "1.7rem",
+        "lg": "1.3rem",
+        "md": "1rem",
+        "sm": ".7rem",
+        "xs": ".5rem"
       }
     },
   },

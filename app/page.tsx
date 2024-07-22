@@ -2,6 +2,7 @@ import SectionOne from "./sections/SectionOne"
 import SectionThree from "./sections/SectionThree"
 import SectionTwo from "./sections/SectionTwo"
 import SectionFour from "./sections/SectionFour"
+import SectionFive from "./sections/SectionFive"
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <SectionTwo />
       <SectionThree />
       <SectionFour /> 
+      <SectionFive />
     </div>
   )
 }

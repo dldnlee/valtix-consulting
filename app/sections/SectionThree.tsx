@@ -35,8 +35,8 @@ function SellingPoint({index, heading, subheading}: SellingPointProps) {
 
 export default function SectionThree() {
   return (
-    <div className="flex flex-col gap-4 py-[100px] p-default-padding bg-gray-1 text-white">
-      <div className="text-center flex flex-col justify-center items-center gap-4 pb-10">
+    <div className="flex flex-col gap-14 py-[100px] items-center p-default-padding bg-gray-1 text-white">
+      <div className="w-fit text-center flex flex-col justify-center items-center gap-4 border-t border-b border-gray-4/50 py-4">
         <h2 className="text-2xl font-extrabold text-beige">Why choose us?</h2>
         <p className="max-w-[600px]">Origin Consulting Group stands out for its specialized focus on startups and medium-sized businesses, combining sector-specific insights with a personalized approach to consulting.</p>
       </div>

@@ -12,3 +12,7 @@
 .sliding-banner {
   animation: swipe 2000 linear infinite backwards;
 }
+
+.gradient-with-bg {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('assets/images/night-skyline2.jpg');
+}

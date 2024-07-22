@@ -37,7 +37,7 @@ export default function GlobalNavigationBar() {
       setGNBStyle('bg-none text-white');
       window.addEventListener('scroll', listenScrollEvent);
     } else {
-      setGNBStyle('bg-gray-1 text-white shadow-md');
+      setGNBStyle('bg-gray-1 text-white shadow-md sticky');
     }
     return (() => {
       window.removeEventListener('scroll', listenScrollEvent);
@@ -50,11 +50,11 @@ export default function GlobalNavigationBar() {
       <Link href='/'>
         <Image src={originLogo} alt="Origin Consulting Group" className={`w-[120px] invert`}/>
       </Link>
-      <ul className={`flex items-center gap-10 text-heading-4`}>
+      <ul className={`flex items-center gap-10`}>
         {
           navigateItems.map((item, idx) => {
             return (
-              <li key={idx} className='text-xl hover:text-beige'>
+              <li key={idx} className='text-md hover:text-beige'>
                 <Link href={item.path} className='hover:text-point'>{item.category}</Link>
               </li>
             )

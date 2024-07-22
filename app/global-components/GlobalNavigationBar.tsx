@@ -37,7 +37,7 @@ export default function GlobalNavigationBar() {
       setGNBStyle('bg-none text-white');
       window.addEventListener('scroll', listenScrollEvent);
     } else {
-      setGNBStyle('bg-beige text-white shadow-md');
+      setGNBStyle('bg-gray-1 text-white shadow-md');
     }
     return (() => {
       window.removeEventListener('scroll', listenScrollEvent);

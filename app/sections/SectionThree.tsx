@@ -35,13 +35,14 @@ function SellingPoint({index, heading, subheading}: SellingPointProps) {
 
 export default function SectionThree() {
   return (
-    <div className="flex flex-col gap-4 py-[100px] bg-gray-1 text-white">
+    <div className="flex flex-col gap-4 py-[100px] p-default-padding bg-gray-1 text-white">
       <div className="text-center flex flex-col justify-center items-center gap-4 pb-10">
         <h2 className="text-2xl font-extrabold text-beige">Why choose us?</h2>
         <p className="max-w-[600px]">Origin Consulting Group stands out for its specialized focus on startups and medium-sized businesses, combining sector-specific insights with a personalized approach to consulting.</p>
       </div>
-      <div className="w-full h-full flex gap-10 justify-center items-center">
+      <div className="w-full h-full flex gap-20 justify-center items-center">
         <iframe width="723" height="436" src="https://www.youtube.com/embed/VCPGMjCW0is?si=gm5rW4C-WEHsvGit" title="Origin Promotional Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <div className="w-[1px] h-[400px] bg-gray-4/50"></div>
         <div className="flex flex-col gap-14">
           {
             sellingPoints.map((item, index) => (

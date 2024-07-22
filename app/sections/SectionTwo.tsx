@@ -43,7 +43,7 @@ export default function SectionTwo() {
   return (
     <div className=''>
       <PromoBanner />
-      <div className='flex bg-gray-4 p-default-padding gap-20 items-center '>
+      <div className='flex bg-gray-4 text-gray-1 p-default-padding gap-20 items-center '>
         <ServiceSlider /> 
         <div className='h-[500px] w-[1px] bg-black/20'></div>
         <div className='flex flex-col justify-center'>

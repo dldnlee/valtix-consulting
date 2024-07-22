@@ -14,25 +14,31 @@ const slideContent = [
     heading: "Startup Advisory",
     image: lightbulbImage,
     alt: 'Light Bulb',
-    subheading: "We provide comprehensive support to startups, guiding them from concept to market with services including...",
+    subheading: "We provide comprehensive support to startups, guiding them from concept to market with services including business model validation, market entry strategies, and fundraising assistance",
   }, 
   {
-    heading: "Startup Advisory",
+    heading: "Growth Strategy for Medium Enterprises",
     image: lightbulbImage,
     alt: 'Light Bulb',
-    subheading: "We provide comprehensive support to startups, guiding them from concept to market with services including...",
+    subheading: "Helping medium-sized businesses scale operations, improve market position, and drive innovation through targeted strategies that foster long-term success.",
   },
   {
-    heading: "Startup Advisory",
+    heading: "Operational Efficiency",
     image: lightbulbImage,
     alt: 'Light Bulb',
-    subheading: "We provide comprehensive support to startups, guiding them from concept to market with services including...",
+    subheading: "Assisting businesses in optimizing processes to boost productivity, reduce costs, and enhance overall performance using the latest in technology and best practices.",
   },
   {
-    heading: "Startup Advisory",
+    heading: "Digital Transformation",
     image: lightbulbImage,
     alt: 'Light Bulb',
-    subheading: "We provide comprehensive support to startups, guiding them from concept to market with services including...",
+    subheading: "Facilitating the integration of digital technologies to streamline operations and enhance customer engagement, tailored specifically to the needs of growing businesses.",
+  },
+  {
+    heading: "Strategic Planning and Execution",
+    image: lightbulbImage,
+    alt: 'Light Bulb',
+    subheading: "Offering strategic foresight and actionable plans that help businesses anticipate market trends and position themselves competitively.",
   }
 ]
 
@@ -45,11 +51,11 @@ interface SlideProps {
 
 function Slide({heading, img, alt, subheading} : SlideProps) {
   return (
-    <div className='bg-white m-2 mx-auto w-[384px] h-[409px] p-4 flex flex-col justify-between text-start rounded-lg'>
+    <div className='bg-gray-3 m-2 mx-auto w-[384px] h-[409px] p-4 flex flex-col justify-between text-start rounded-lg'>
       <h2 className='font-extrabold text-[21px]'>{heading}</h2>
       <Image src={img} alt={alt} className='w-[350px] h-[165px] object-contain'/>
-      <p className=' font-sm text-[17px]'>{subheading}</p>
-      <a href="/about" className='group text-[17px] font-bold hover:text-beige'>Learn More <Image src={rightArrow} width={16} alt="Right Arrow" className='inline-block ml-4 group-hover:translate-x-1 transition-transform'/></a>
+      <p className=' font-sm text-[17px] line-clamp-3'>{subheading}</p>
+      <a href="/about" className='group text-[17px] font-bold hover:text-beige'>Learn More<Image src={rightArrow} width={16} alt="Right Arrow" className='inline-block ml-4 group-hover:translate-x-1 transition-transform'/></a>
     </div>
   )
 }

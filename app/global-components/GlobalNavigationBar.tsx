@@ -25,7 +25,7 @@ export default function GlobalNavigationBar() {
 
   function listenScrollEvent() {
     if (window.scrollY > 1) {
-      setGNBStyle('bg-white text-black shadow-md')
+      setGNBStyle('bg-gray-1 text-white shadow-md')
     } else {
       setGNBStyle('bg-none text-white')
     }
@@ -37,7 +37,7 @@ export default function GlobalNavigationBar() {
       setGNBStyle('bg-none text-white');
       window.addEventListener('scroll', listenScrollEvent);
     } else {
-      setGNBStyle('bg-white text-black shadow-md');
+      setGNBStyle('bg-beige text-white shadow-md');
     }
     return (() => {
       window.removeEventListener('scroll', listenScrollEvent);
@@ -46,9 +46,9 @@ export default function GlobalNavigationBar() {
 
   return (
     <div 
-      className={`z-20 group font-semibold flex w-full items-center hover:bg-white hover:text-black gap-20 px-10 py-5 fixed top-0 left-0 ${GNBStyle}`}>
+      className={`z-20 group font-semibold flex w-full items-center hover:bg-gray-1 hover:text-white gap-20 px-10 py-5 fixed top-0 left-0 ${GNBStyle}`}>
       <Link href='/'>
-        <Image src={originLogo} alt="Origin Consulting Group" className={`w-[120px] invert group-hover:invert-0`}/>
+        <Image src={originLogo} alt="Origin Consulting Group" className={`w-[120px] invert`}/>
       </Link>
       <ul className={`flex items-center gap-10 text-heading-4`}>
         {

@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import GlobalNavigationBar from "./global-components/GlobalNavigationBar"
-
+import { Footer } from "./global-components/Footer";
 
 
 export default function HomeTemplate({children}:
@@ -14,6 +14,7 @@ export default function HomeTemplate({children}:
     <div className="h-fit">
       <GlobalNavigationBar />
       {children}
+      <Footer />
     </div>
   )
 }

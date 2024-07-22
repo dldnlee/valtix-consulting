@@ -49,7 +49,7 @@ function Slide({heading, img, alt, subheading} : SlideProps) {
       <h2 className='font-extrabold text-[21px]'>{heading}</h2>
       <Image src={img} alt={alt} className='w-[350px] h-[165px] object-contain'/>
       <p className=' font-sm text-[17px]'>{subheading}</p>
-      <a href="/about" className='group text-[17px] font-bold '>Learn More <Image src={rightArrow} width={16} alt="Right Arrow" className='inline-block ml-4 group-hover:translate-x-1 transition-transform'/></a>
+      <a href="/about" className='group text-[17px] font-bold hover:text-beige'>Learn More <Image src={rightArrow} width={16} alt="Right Arrow" className='inline-block ml-4 group-hover:translate-x-1 transition-transform'/></a>
     </div>
   )
 }
@@ -64,7 +64,7 @@ function Slider() {
       navigation={true}
       loop={true}
       autoplay={{
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -86,7 +86,7 @@ function Slider() {
 
 export default function ServiceSlider() {
   return (
-    <div className="w-full p-default-padding text-center flex flex-col justify-center items-center bg-white gap-5">
+    <div className=" text-center flex flex-col justify-center items-center gap-5">
       <h1 className="font-extrabold text-2xl">Services we offer for you</h1>
       <p className="max-w-[589px]">By partnering with us, you gain access to expert advice tailored to the unique challenges and opportunities faced by startups.</p>
       <Slider /> 

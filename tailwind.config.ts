@@ -14,10 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       padding:  {
-        "default-padding": "100px 250px"
-      },
-      animation: {
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        "default-padding": "60px 250px"
       },
       keyframes: {
         'infinite-scroll': {
@@ -25,6 +22,9 @@ const config: Config = {
             to: { transform: 'translateX(-100%)' },
         }
       },    
+      animation: {
+        'infinite-scroll': 'infinite-scroll 30s linear infinite',
+      },
       colors: {
         "gray-1": "#353535",
         "gray-2": "#666666",

@@ -6,7 +6,7 @@ import originLogo from "@/app/assets/icons/origin-logo.svg";
 const navigateItems = [
   {
     category: 'Services',
-    path: ''
+    path: '/services'
   },
   {
     category: 'About Us',

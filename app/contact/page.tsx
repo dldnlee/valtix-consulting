@@ -4,7 +4,7 @@ import bigLogo from '@/app/assets//icons/origin-logo-big.svg'
 
 export default function Contact() {
   return (
-    <div className="p-default-padding flex flex-col gap-14">
+    <div className="p-default-padding lg:p-default-padding md:p-medium-padding flex flex-col gap-14">
       <div className="flex items-center justify-center gap-20">
         <Image src={bigLogo} alt="Big Logo" className="w-[250px]"/>
         <div className='h-[200px] w-[1px] bg-black/20'></div>

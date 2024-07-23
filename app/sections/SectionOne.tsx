@@ -11,7 +11,7 @@ export default function SectionOne() {
     h-[780px]
     gradient-with-bg text-white flex items-center overflow-hidden">
       {/* <Image src={skyline} alt="Night Skyline" className="object-cover w-full absolute top-0"/> */}
-      <div className="p-default-padding absolute">
+      <div className="lg:p-default-padding md:p-medium-padding absolute">
         <div className="flex flex-col gap-6 max-w-[500px]">
           <h1 className="text-3xl font-semibold leading-none">Get help from our expert consultants.</h1>
           <p>{introBannerText}</p>

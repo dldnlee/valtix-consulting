@@ -15,7 +15,7 @@ const config: Config = {
       },
       padding:  {
         "default-padding": "60px 250px",
-        
+        "medium-padding": "60px 50px"
       },
       keyframes: {
         'infinite-scroll': {

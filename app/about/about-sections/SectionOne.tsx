@@ -3,7 +3,7 @@
 
 export default function SectionOne() {
   return (
-    <div className="flex flex-col p-default-padding items-center gap-10">
+    <div className="flex flex-col p-default-padding md:p-medium-padding items-center gap-10">
       <div className="text-center">
         <h1 className="text-3xl font-extrabold">Our Mission</h1>
         <p className="max-w-[500px] text-center">&quot;To empower startups and medium-sized enterprises with innovative strategies and advanced technological solutions that drive their growth and streamline their operations.&quot;</p>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function SectionOne() {
   return (
-    <div className="bg-white lg:p-default-padding md:p-medium-padding flex items-top justify-center lg:pb-0 md:pb-0 lg:pt-[150px] gap-[200px]">
+    <div className="bg-white lg:p-default-padding md:p-medium-padding flex items-top justify-center lg:pb-0 md:pb-0 lg:pt-[150px] gap-[200px] border-b">
       <div className="flex flex-col gap-6">
         <div>
           <h2 className="lg:text-md md:text-sm text-gray-2">ORIGIN CONSULTING GROUP</h2>

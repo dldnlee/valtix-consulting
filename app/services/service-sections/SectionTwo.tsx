@@ -25,7 +25,7 @@ const keypointsInfo = [
 function Keypoints({heading, text, icon} : {heading: string, text: string, icon: StaticImageData}) {
   return (
     <div className="flex items-center gap-5">
-      <Image src={icon} alt="Conversion Rate" className="w-[100px]" />
+      <Image src={icon} alt="Conversion Rate" className="w-[90px]" />
       <div className="flex flex-col gap-2">
         <h2 className="font-bold text-lg">{heading}</h2>
         <p className="w-[600px]">{text}</p>
@@ -36,7 +36,7 @@ function Keypoints({heading, text, icon} : {heading: string, text: string, icon:
 
 export default function SectionTwo() {
   return (
-    <div className="flex items-center justify-center gap-[100px] lg:p-default-padding md:p-medium-padding">
+    <div className="flex items-center justify-center gap-[100px] lg:p-default-padding md:p-medium-padding bg-white lg:py-[140px] md:py-[140px]">
       <Image src={supportImage} alt="Business Executives using laptop" className="md:w-[300px] md:h-[400px] lg:w-[425px] lg:h-[621px] rounded-3xl object-cover"/>
       <div className="flex flex-col gap-[40px]">
         <div>

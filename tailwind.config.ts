@@ -14,7 +14,7 @@ const config: Config = {
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       padding:  {
-        "default-padding": "60px 250px",
+        "default-padding": "60px 200px",
         "medium-padding": "60px 50px"
       },
       keyframes: {

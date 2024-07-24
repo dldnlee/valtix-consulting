@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image"
-import supportImage from '@/app/assets/images/business-executives-using-laptop.jpg';
+import supportImage from '@/app/assets/images/business-executives-using-laptop.webp';
 import conversionRate from '@/app/assets/icons/conversion-rate.png';
 import benefits from '@/app/assets/icons/benefits.png';
 import speculate from '@/app/assets/icons/speculate.png';
@@ -40,7 +40,7 @@ export default function SectionTwo() {
       <Image src={supportImage} alt="Business Executives using laptop" className="md:w-[300px] md:h-[400px] lg:w-[425px] lg:h-[621px] rounded-3xl object-cover"/>
       <div className="flex flex-col gap-[40px]">
         <div>
-          <h2 className="text-2xl font-extrabold mb-4">Startup Advisory</h2>
+          <h2 className="text-3xl font-bold mb-4 border-b-4 border-beige w-fit">Startup Advisory</h2>
           <p className="w-[700px] text-md">Our Startup Advisory service empowers emerging businesses to carve out their niche and scale effectively in competitive markets. By partnering with us, you gain access to expert advice tailored to the unique challenges and opportunities faced by startups.</p>
         </div>
         <div className="flex flex-col gap-10">

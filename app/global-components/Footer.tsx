@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <footer className="w-full flex flex-col bg-gray-1 py-[100px] font-extralight lg:p-default-padding md:p-medium-padding gap-8 text-gray-3 border-t">
+    <footer className="w-full flex flex-col bg-gray-1 py-[100px] font-extralight lg:p-default-padding md:p-medium-padding gap-8 text-gray-3">
       <div className='w-full flex justify-between '>
         <div className='w-full flex flex-col gap-4'>
           <Image src={logo} alt="Origin Logo" className='w-[100px] invert'/>

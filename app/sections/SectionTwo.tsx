@@ -44,12 +44,12 @@ export default function SectionTwo() {
     <div className=''>
       <PromoBanner />
       <div className='flex lg:flex-row md:flex-col bg-gray-4 text-gray-1 p-default-padding gap-20 items-center justify-center'>
-        <ServiceSlider /> 
-        <div className='h-[500px] w-[1px] bg-black/20 lg:block md:hidden'></div>
         <div className='flex flex-col justify-center'>
-          <h2 className='font-extrabold text-2xl mb-10'>Journey to success</h2>
-          <p className='max-w-[400px] leading-8'>{companyOverviewText}</p>
+          <h2 className='font-extrabold text-3xl mb-10'>Journey to Success</h2>
+          <p className='w-[600px] leading-8'>{companyOverviewText}</p>
         </div>
+        <div className='h-[500px] w-[1px] bg-black/20 lg:block md:hidden'></div>
+        <ServiceSlider /> 
       </div>
     </div>
   )

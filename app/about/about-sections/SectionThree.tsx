@@ -29,9 +29,9 @@ function MemberCard({name, position} : {name: string, position: string}) {
 
 export default function SectionThree() {
   return (
-    <div className="flex flex-col items-center justify-center lg:p-default-padding md:p-medium-padding gap-20">
+    <div className="flex flex-col items-center justify-center lg:p-default-padding md:p-medium-padding gap-20 lg:py-[120px] md:py-[120px] bg-white">
       <div className="text-center">
-        <h2 className="font-bold text-2xl">Meet our team</h2>
+        <h2 className="font-bold text-3xl">Meet our team</h2>
         <p className="max-w-[600px]">We are the driving force behind innovative solutions and strategic growth. Our consultants are here to empower your business and deliver exceptional results.</p>
       </div>
       <div className="flex gap-10">

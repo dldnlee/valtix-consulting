@@ -10,8 +10,9 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-        "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "black-pattern-1": "url('./assets/images/black-pattern-1.webp')",
+        "black-pattern-2": "url('./assets/images/black-pattern-2.webp')",
       },
       padding:  {
         "default-padding": "60px 200px",

@@ -85,7 +85,7 @@ export function ContactForm() {
         <InfoContainer />
         <SocialContainer />
       </div>
-      <form action="" className='w-[60%] p-10 gap-10 flex flex-col rounded-e-xl'>
+      <form action="" className='w-[60%] p-10 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
         <label htmlFor="name" className='flex flex-col'>Full Name
           <input type="text" id='name' placeholder='Full Name' className='p-4 bg-gray-200' />
         </label>

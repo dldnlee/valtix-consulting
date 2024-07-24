@@ -19,7 +19,6 @@
 
 .services-img-bg {
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('assets/images/cropped-business-people-discussing-charts-diagrams-office.jpg');
-  
 }
 
 .digital-transformation-bg {
@@ -27,4 +26,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.swiper-pagination-bullet-active {
+  color: black;
 }

@@ -24,7 +24,7 @@ interface SellingPointProps {
 function SellingPoint({index, heading, subheading}: SellingPointProps) {
   return (
     <div className="flex gap-4">
-      <p className="px-4 h-fit py-1 rounded-full w-fit bg-black text-white text-center">{index}</p>
+      <p className="px-4 h-fit py-1 rounded-full w-fit bg-gray-1 text-white text-center">{index}</p>
       <div>
         <h3 className="text-[21px] font-bold text-beige">{heading}</h3>
         <p className="text-[14px] max-w-[339px]">{subheading}</p>
@@ -35,9 +35,9 @@ function SellingPoint({index, heading, subheading}: SellingPointProps) {
 
 export default function SectionThree() {
   return (
-    <div className="flex flex-col gap-14 py-[100px] items-center p-default-padding md:p-medium-padding bg-gray-1 text-white">
-      <div className="w-fit text-center flex flex-col justify-center items-center gap-4 border-t border-b border-gray-4/50 py-4">
-        <h2 className="text-2xl font-extrabold text-beige">Why choose us?</h2>
+    <div className="bg-black-pattern-2 bg-cover bg-center bg-no-repeat flex flex-col gap-14 py-[100px] items-center p-default-padding md:p-medium-padding lg:py-[100px] bg-gray-1 text-white">
+      <div className="w-fit text-center flex flex-col justify-center items-center gap-4">
+        <h2 className="text-3xl font-extrabold text-beige border-b-4 border-beige">Why choose us?</h2>
         <p className="max-w-[600px]">Origin Consulting Group stands out for its specialized focus on startups and medium-sized businesses, combining sector-specific insights with a personalized approach to consulting.</p>
       </div>
       <div className="w-full h-full flex gap-20 justify-center items-center">

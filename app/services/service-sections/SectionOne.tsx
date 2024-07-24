@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function SectionOne() {
   return (
-    <div className="bg-white lg:p-default-padding md:p-medium-padding flex items-top justify-center lg:pb-0 md:pb-0 lg:pt-[150px] gap-[200px] border-b">
-      <div className="flex flex-col gap-6">
+    <div className="bg-gradient-to-t from-gray-3 to-white to-20%  bg-white lg:p-default-padding md:p-medium-padding flex items-top justify-center lg:pb-0 md:pb-0 lg:pt-[150px] gap-[200px] border-b">
+      <div className="flex flex-col gap-6 ">
         <div>
           <h2 className="lg:text-md md:text-sm text-gray-2">ORIGIN CONSULTING GROUP</h2>
           <h1 className="lg:text-4xl md:text-3xl font-bold lg:leading-[70px] md:leading-[40px]">Your Blueprint<br />for <span className='text-beige'>Success</span></h1>

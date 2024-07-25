@@ -37,7 +37,7 @@ function Keypoints({heading, text, icon} : {heading: string, text: string, icon:
 export default function SectionTwo() {
   return (
     <div className="flex items-center justify-center gap-[100px] lg:p-default-padding md:p-medium-padding bg-white lg:py-[140px] md:py-[140px]">
-      <Image src={supportImage} alt="Business Executives using laptop" className="md:w-[300px] md:h-[400px] lg:w-[425px] lg:h-[621px] rounded-3xl object-cover shadow-xl"/>
+      <Image src={supportImage} alt="Business Executives using laptop" className="md:w-[400px] md:h-[521px] lg:w-[525px] lg:h-[621px] rounded-3xl object-cover shadow-xl"/>
       <div className="flex flex-col gap-[40px]">
         <div>
           <h2 className="text-3xl font-bold mb-4 border-b-4 border-beige w-fit">Startup Advisory</h2>

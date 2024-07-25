@@ -18,7 +18,7 @@ const keypoints = [
 
 function Keypoints({heading, text, icon} : {heading: string, text: string, icon: StaticImageData}) {
   return (
-    <div className='flex flex-col gap-4 items-center'>
+    <div className='flex flex-col gap-4 items-center shadow-xl rounded-lg px-2 py-4'>
       <Image src={icon} alt={heading} className='w-[130px]'/>
       <div className='text-center flex flex-col gap-2'>
         <h3 className='text-xl font-semibold'>{heading}</h3>
@@ -44,7 +44,7 @@ export default function SectionFour() {
           }
         </div>
       </div>
-      <Image src={operationalEfficiency} alt="asian businessman presenting analysis cost graph corporate colleagues meeting office" className='md:w-[300px] md:h-[400px] lg:w-[425px] lg:h-[621px] object-cover rounded-3xl shadow-xl'/>
+      <Image src={operationalEfficiency} alt="asian businessman presenting analysis cost graph corporate colleagues meeting office" className='md:w-[300px] md:h-[400px] lg:w-[525px] lg:h-[621px] object-cover rounded-3xl shadow-xl'/>
       
     </div>
   )

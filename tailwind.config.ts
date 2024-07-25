@@ -13,6 +13,11 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "black-pattern-1": "url('./assets/images/black-pattern-1.webp')",
         "black-pattern-2": "url('./assets/images/black-pattern-2.webp')",
+        "white-abstract-pattern-1": "url('./assets/images/flat-illustration-wavy-white-background.jpg')",
+        "white-abstract-pattern-2": "url('./assets/images/white-abstract-background-2.jpg')",
+        "white-abstract-pattern-3": "url('./assets/images/white-abstract-background-3.jpg')",
+        "white-abstract-pattern-5": "url('./assets/images/white-abstract-background-5.webp')",
+        "services-main-bg": "url('./assets/images/businessman-near-building-looking-away.jpg')",
       },
       padding:  {
         "default-padding": "60px 200px",

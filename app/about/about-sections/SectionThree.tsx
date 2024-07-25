@@ -1,26 +1,32 @@
-
+import maykel from '@/app/assets/images/Maykel.jpg'
+import andrew from '@/app/assets/images/Andrew.jpg'
+import georgio from '@/app/assets/images/Giorgio.jpg'
+import Image, { StaticImageData } from 'next/image'
 
 const members = [
   {
     name: "Maykel Soeharto",
-    position: "Founder"
+    position: "Founder",
+    profilePic: maykel
   },
   {
-    name: "Maykel Soeharto",
-    position: "Founder"
+    name: "Andrew",
+    position: "Founder",
+    profilePic: andrew
   },
   {
-    name: "Maykel Soeharto",
-    position: "Founder"
+    name: "Georgio",
+    position: "Founder",
+    profilePic: georgio
   }
 ]
 
-function MemberCard({name, position} : {name: string, position: string}) {
+function MemberCard({name, position, profilePic} : {name: string, position: string, profilePic: StaticImageData}) {
   return (
-    <div className="flex flex-col gap-2">
-      <div className="w-[300px] h-[400px] bg-gray-3 rounded-2xl"></div>
+    <div className="flex flex-col gap-10">
+      <Image src={profilePic} alt={name} className='w-[300px] h-[400px] rounded-2xl object-cover shadow-xl shadow-gray-2'/>
       <div>
-        <h3 className="font-semibold">{name}</h3>
+        <h3 className="font-semibold text-lg">{name}</h3>
         <p className="font-extralight">{position}</p>
       </div>
     </div>
@@ -34,10 +40,10 @@ export default function SectionThree() {
         <h2 className="font-bold text-3xl">Meet our team</h2>
         <p className="max-w-[600px]">We are the driving force behind innovative solutions and strategic growth. Our consultants are here to empower your business and deliver exceptional results.</p>
       </div>
-      <div className="flex gap-10">
+      <div className="flex gap-20">
         {
           members.map((item, index) => (
-            <MemberCard key={index} name={item.name} position={item.position}/>
+            <MemberCard key={index} name={item.name} position={item.position} profilePic={item.profilePic}/>
           ))
         }
       </div>

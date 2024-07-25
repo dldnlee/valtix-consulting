@@ -24,11 +24,51 @@ const keypointsInfo = [
   }
 ]
 
-function Keypoints({heading, text, icon} : {heading: string, text: string, icon: StaticImageData}) {
+const variants = {
+  'hidden-0': {
+    opacity:0, x:-100
+  },
+  'visible-0': {
+    opacity:1, x:0,
+    transition: {
+      duration: 2,
+      type:'spring',
+      stiffness: 100,
+      delay: .5
+    }
+  },
+  'hidden-1': {
+    opacity:0, x:-100
+  },
+  'visible-1': {
+    opacity:1, x:0,
+    transition: {
+    duration: 2,
+    type:'spring',
+    stiffness: 100,
+    delay: .7
+    }
+  },
+  'hidden-2': {
+    opacity:0, x:-100
+  },
+  'visible-2': {
+    opacity:1, x:0,
+    transition: {
+    duration: 2,
+    type:'spring',
+    stiffness: 100,
+    delay: .9
+    }
+  },
+}
+
+function Keypoints({heading, text, icon, index} : {heading: string, text: string, icon: StaticImageData, index: number}) {
   return (
     <motion.div
     initial={{opacity:0, x:-100}}
-      whileInView={{opacity:1, x:0}}
+      whileInView={`visible-${index}`}
+      variants={variants}
       viewport={{once: true}}
       transition={{
         duration: 3,
@@ -57,7 +97,7 @@ export default function SectionTwo() {
         <div className="flex flex-col gap-10">
           {
             keypointsInfo.map((item, index) => (
-              <Keypoints key={index} heading={item.heading} text={item.text} icon={item.icon} />
+              <Keypoints key={index} heading={item.heading} text={item.text} icon={item.icon} index={index} />
             ))
           }
         </div>

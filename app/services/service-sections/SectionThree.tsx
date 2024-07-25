@@ -16,17 +16,40 @@ const keypoints = [
   }
 ]
 
-function Keypoint({heading, text} : {heading: string, text: string}) {
+const variants = {
+  'transition-0': {
+    opacity:1, y:0,
+    transition:{
+    duration: 3,
+    type:'spring',
+    stiffness: 100,
+    delay: .5
+  }},
+  'transition-1': {
+    opacity:1, y:0,
+    transition:{
+    duration: 3,
+    type:'spring',
+    stiffness: 100,
+    delay: .7
+  }},
+  'transition-2': {
+    opacity:1, y:0,
+    transition:{
+    duration: 3,
+    type:'spring',
+    stiffness: 100,
+    delay: .9
+  }}
+}
+
+function Keypoint({heading, text, index} : {heading: string, text: string, index: number}) {
   return (
     <motion.li
     initial={{opacity:0, y:100}}
-      whileInView={{opacity:1, y:0}}
-      viewport={{once: true}}
-      transition={{
-        duration: 4,
-        type:'spring',
-        stiffness: 100
-      }}
+    whileInView={`transition-${index}`}
+    viewport={{once: true}}
+    variants={variants}
     className="px-[20px] py-[40px] w-[420px] flex flex-col items-center justify-start bg-white text-center gap-4 shadow-lg rounded-2xl">
       <h2 className="text-xl font-bold border-b border-beige">{heading}</h2>
       <p>{text}</p>
@@ -45,7 +68,7 @@ export default function SectionThree() {
       <ul className="flex gap-10">
         {
           keypoints.map((item, index) => (
-            <Keypoint key={index} heading={item.heading} text={item.text} /> 
+            <Keypoint key={index} heading={item.heading} text={item.text} index={index}/> 
           ))
         }
       </ul>

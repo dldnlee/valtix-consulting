@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 
 export default function SectionOne() {
   return (
-    <div className="bg-white lg:p-default-padding md:p-medium-padding overflow-hidden flex items-top justify-center lg:pb-0 md:pb-0 lg:pt-[200px] gap-[200px] border-b bg-white-abstract-pattern-1 bg-cover bg-bottom bg-no-repeat">
+    <div className="bg-white lg:p-default-padding md:p-medium-padding overflow-hidden flex items-top justify-center lg:pb-0 md:pb-0 lg:pt-[240px] gap-[240px] border-b bg-white-abstract-pattern-1 bg-cover bg-bottom bg-no-repeat">
       <div className="flex flex-col gap-6 ">
         <div>
           <h2 className="lg:text-md md:text-sm text-gray-2">ORIGIN CONSULTING GROUP</h2>

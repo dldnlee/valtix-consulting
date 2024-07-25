@@ -1,4 +1,5 @@
-// import backgroundImage from "@/app/assets/images/cropped-business-people-discussing-charts-diagrams-office.jpg"
+'use client'
+import {motion} from 'framer-motion';
 
 const keypoints = [
   {
@@ -17,10 +18,19 @@ const keypoints = [
 
 function Keypoint({heading, text} : {heading: string, text: string}) {
   return (
-    <div className="px-[20px] py-[40px] w-[420px] flex flex-col items-center justify-start bg-white text-center gap-4 shadow-lg rounded-2xl">
+    <motion.li
+    initial={{opacity:0, y:100}}
+      whileInView={{opacity:1, y:0}}
+      viewport={{once: true}}
+      transition={{
+        duration: 4,
+        type:'spring',
+        stiffness: 100
+      }}
+    className="px-[20px] py-[40px] w-[420px] flex flex-col items-center justify-start bg-white text-center gap-4 shadow-lg rounded-2xl">
       <h2 className="text-xl font-bold border-b border-beige">{heading}</h2>
       <p>{text}</p>
-    </div>
+    </motion.li>
   )
 }
 
@@ -32,13 +42,13 @@ export default function SectionThree() {
         <div className="w-[2px] h-[100px] bg-gray-2"></div>
         <p className="w-[600px] text-white">Our Growth Strategy services are designed to help established medium-sized enterprises identify new opportunities and expand their market presence. We provide the insights and tools needed to navigate market complexities and accelerate growth.</p>
       </div>
-      <div className="flex gap-10">
+      <ul className="flex gap-10">
         {
           keypoints.map((item, index) => (
             <Keypoint key={index} heading={item.heading} text={item.text} /> 
           ))
         }
-      </div>
+      </ul>
     </div>
   )
 }

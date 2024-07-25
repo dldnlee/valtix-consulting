@@ -58,7 +58,7 @@ interface SlideProps {
 
 function Slide({heading, img, alt, subheading} : SlideProps) {
   return (
-    <div className='m-2 bg-gradient-to-t from-black to-transparent to-70% text-white mx-auto w-[384px] h-[409px] overflow-hidden flex flex-col relative justify-end text-start rounded-lg'>
+    <div className='m-2 bg-gradient-to-t from-black to-transparent to-70% text-white mx-auto w-[384px] h-[409px] overflow-hidden flex flex-col relative justify-end text-start rounded-lg shadow-lg shadow-gray-500'>
       <Image src={img} alt={alt} className='w-full h-full object-cover absolute mix-blend-multiply'/>
       <div className='p-4 z-10 flex flex-col gap-4'>
         <h2 className='font-extrabold text-[21px]'>{heading}</h2>

@@ -1,8 +1,10 @@
+'use client'
 import Image, { StaticImageData } from "next/image"
 import supportImage from '@/app/assets/images/business-executives-using-laptop.webp';
 import conversionRate from '@/app/assets/icons/conversion-rate.png';
 import benefits from '@/app/assets/icons/benefits.png';
 import speculate from '@/app/assets/icons/speculate.png';
+import {motion} from 'framer-motion';
 
 const keypointsInfo = [
   {
@@ -24,13 +26,22 @@ const keypointsInfo = [
 
 function Keypoints({heading, text, icon} : {heading: string, text: string, icon: StaticImageData}) {
   return (
-    <div className="flex items-center gap-5">
+    <motion.div
+    initial={{opacity:0, x:-100}}
+      whileInView={{opacity:1, x:0}}
+      viewport={{once: true}}
+      transition={{
+        duration: 3,
+        type:'spring',
+        stiffness: 100
+      }}
+    className="flex items-center gap-5">
       <Image src={icon} alt="Conversion Rate" className="w-[90px]" />
       <div className="flex flex-col gap-2">
         <h2 className="font-bold text-lg">{heading}</h2>
         <p className="w-[600px]">{text}</p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

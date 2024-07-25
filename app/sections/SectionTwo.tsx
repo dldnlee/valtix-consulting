@@ -1,4 +1,3 @@
-
 import ServiceSlider from './components/ServiceSlider';
 import { companyOverviewText } from '../text';
 

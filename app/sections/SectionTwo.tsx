@@ -10,8 +10,8 @@ type PromoTextProps = {
 // Data 
 const promoText = [
   {
-    heading: "1M+",
-    subheading: "We have visitors from all over the world"
+    heading: "100K+",
+    subheading: "Visitors from all over the world"
   },
   {
     heading: "93%",
@@ -30,7 +30,7 @@ function PromoBanner() {
       {promoText.map((item, index) => (
         <div key={index} className="flex items-center gap-5 p-5">
           <h1 className="font-extrabold text-2xl">{item.heading}</h1>
-          <p className="font-light max-w-[200px]">{item.subheading}</p>
+          <p className="font-light w-[250px]">{item.subheading}</p>
         </div>
       ))}
     </div>
@@ -45,7 +45,7 @@ export default function SectionTwo() {
       <div className='flex lg:flex-row md:flex-col bg-gray-4 text-gray-1 p-default-padding gap-20 items-center justify-center'>
         <div className='flex flex-col justify-center'>
           <h2 className='font-extrabold text-3xl mb-10'>Journey to Success</h2>
-          <p className='w-[600px] leading-8'>{companyOverviewText}</p>
+          <p className='w-[600px] leading-6'>{companyOverviewText}</p>
         </div>
         <div className='h-[500px] w-[1px] bg-black/20 lg:block md:hidden'></div>
         <ServiceSlider /> 

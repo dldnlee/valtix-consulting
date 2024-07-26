@@ -16,6 +16,19 @@
     --background-end-rgb: 0, 0, 0;
   }
 } */
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: beige !important; 
+}
+
 
 body {
   color: rgb(var(--foreground-rgb));

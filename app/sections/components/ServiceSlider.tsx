@@ -110,7 +110,7 @@ function Slider() {
 export default function ServiceSlider() {
   return (
     <div className=" text-center flex flex-col justify-center items-center gap-5">
-      <h1 className="font-extrabold text-2xl">Services we offer for you</h1>
+      <h1 className="font-bold text-xl">Services we offer for you</h1>
       <Slider /> 
     </div>
   )

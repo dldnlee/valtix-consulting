@@ -41,11 +41,11 @@ const config: Config = {
       },
       fontSize: {
         "4xl": "4rem",
-        "3xl": "3rem",
+        "3xl": "2.5rem",
         "2xl": "2rem",
         "xl": "1.7rem",
-        "lg": "1.3rem",
-        "md": "1rem",
+        "lg": "1.2rem",
+        "md": ".8rem",
         "sm": ".7rem",
         "xs": ".5rem"
       }

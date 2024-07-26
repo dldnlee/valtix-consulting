@@ -1,3 +1,4 @@
+'use client'
 import location from '@/app/assets/icons/location.png'
 import email from '@/app/assets/icons/email.png'
 import phone from '@/app/assets/icons/phone.png'
@@ -6,21 +7,22 @@ import twitter from '@/app/assets/icons/twitter.png'
 import instagram from '@/app/assets/icons/instagram.png'
 import { StaticImageData } from 'next/image'
 import Image from 'next/image'
+import { FormEvent } from 'react'
 
 const contactInfo = [
   {
-    type:'Headquarters',
-    info:'Tallinn, Estonia',
+    type: 'Headquarters',
+    info: 'Tallinn, Estonia',
     img: location
   },
   {
-    type:'Phone Number',
-    info:'+12 1234 1234',
+    type: 'Phone Number',
+    info: '+12 1234 1234',
     img: phone
   },
   {
-    type:'Email Address',
-    info:'client@originconsultinggroup.com',
+    type: 'Email Address',
+    info: 'client@originconsultinggroup.com',
     img: email
   },
 ]
@@ -37,7 +39,7 @@ const socialInfo = [
   },
 ]
 
-function SocialButtons({img} : {img:StaticImageData}) {
+function SocialButtons({ img }: { img: StaticImageData }) {
   return (
     <button className=' bg-black w-fit rounded-full hover:bg-white p-2 group'>
       <Image src={img} alt="" className='size-[20px] invert group-hover:invert-0' />
@@ -45,10 +47,10 @@ function SocialButtons({img} : {img:StaticImageData}) {
   )
 }
 
-function Info({img, info} : {img: StaticImageData, info: string}) {
+function Info({ img, info }: { img: StaticImageData, info: string }) {
   return (
     <div className='flex items-center gap-6'>
-      <Image src={img} alt="" className='size-[30px] invert'/>
+      <Image src={img} alt="" className='size-[30px] invert' />
       <p className='text-body-1'>{info}</p>
     </div>
   )
@@ -58,7 +60,7 @@ function InfoContainer() {
   return (
     <div className='flex flex-col gap-6'>
       {contactInfo.map((item, idx) => (
-        <Info key={idx} img={item.img} info={item.info}/>
+        <Info key={idx} img={item.img} info={item.info} />
       ))}
     </div>
   )
@@ -68,13 +70,36 @@ function SocialContainer() {
   return (
     <div className='flex gap-6'>
       {socialInfo.map((item, idx) => (
-        <SocialButtons key={idx} img={item.img}/>
+        <SocialButtons key={idx} img={item.img} />
       ))}
     </div>
   )
 }
 
 export function ContactForm() {
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>): Promise<void> {
+    if (!event) return;
+    event.preventDefault();
+
+    const formData = new FormData(event.target as HTMLFormElement);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        console.error('Failed to submit form:', response.statusText);
+      } else {
+        console.log('Form submitted successfully!');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  }
+
   return (
     <div className="w-full h-full flex shadow-2xl">
       <div className="w-[40%] bg-gray-1 text-white p-8 flex flex-col justify-between rounded-s-xl">
@@ -85,17 +110,18 @@ export function ContactForm() {
         <InfoContainer />
         <SocialContainer />
       </div>
-      <form action="" className='w-[60%] p-10 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
-        <label htmlFor="name" className='flex flex-col'>Full Name
-          <input type="text" id='name' placeholder='Full Name' className='p-4 bg-gray-200' />
+      <form onSubmit={handleSubmit} action="" className='w-[60%] p-10 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
+        <label htmlFor="fullName" className='flex flex-col'>Full Name
+          <input type="text" id='fullName' placeholder='Full Name' className='p-4 bg-gray-200' />
         </label>
-        <label htmlFor="name" className='flex flex-col'>Email
-          <input type="text" id='name' placeholder='Email' className='p-4 bg-gray-200' />
+        <label htmlFor="email" className='flex flex-col'>Email
+          <input type="email" id='email' placeholder='Email' className='p-4 bg-gray-200' />
         </label>
-        <label htmlFor="name" className='flex flex-col'>Phone Number
-          <input type="text" id='name' placeholder='Phone Number' className='p-4 bg-gray-200' />
+        <label htmlFor="phoneNumber" className='flex flex-col'>Phone Number
+          <input type="text" id='phoneNumber' placeholder='Phone Number' className='p-4 bg-gray-200' />
         </label>
-        <button className='bg-gray-1 text-white px-8 py-3 rounded-md hover:bg-point'>Send Information</button>
+        <button 
+        className='bg-gray-1 text-white px-8 py-3 rounded-md hover:bg-point'>Send Information</button>
       </form>
     </div>
   )

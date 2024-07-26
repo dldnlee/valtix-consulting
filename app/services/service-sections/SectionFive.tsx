@@ -16,7 +16,7 @@ export default function SectionFive() {
       whileInView={{opacity: 1, y:0}}
       viewport={{once:true}}
       transition={{
-        delay: .5,
+        delay: 0,
         duration: 2,
         type:'spring',
         stiffness: 40,

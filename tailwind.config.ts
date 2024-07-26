@@ -45,7 +45,7 @@ const config: Config = {
         "2xl": "2rem",
         "xl": "1.7rem",
         "lg": "1.2rem",
-        "md": ".8rem",
+        "md": ".9rem",
         "sm": ".7rem",
         "xs": ".5rem"
       }

@@ -30,7 +30,7 @@ function PromoBanner() {
       {promoText.map((item, index) => (
         <div key={index} className="flex items-center gap-5 p-5">
           <h1 className="font-extrabold text-2xl">{item.heading}</h1>
-          <p className="font-light w-[250px]">{item.subheading}</p>
+          <p className="font-light w-[250px] text-md">{item.subheading}</p>
         </div>
       ))}
     </div>

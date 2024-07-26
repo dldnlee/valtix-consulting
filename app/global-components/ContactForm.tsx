@@ -7,7 +7,7 @@ import twitter from '@/app/assets/icons/twitter.png'
 import instagram from '@/app/assets/icons/instagram.png'
 import { StaticImageData } from 'next/image'
 import Image from 'next/image'
-import { FormEvent } from 'react'
+// import { FormEvent } from 'react'
 
 const contactInfo = [
   {
@@ -78,27 +78,30 @@ function SocialContainer() {
 
 export function ContactForm() {
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>): Promise<void> {
-    if (!event) return;
+  async function handleSubmit(event : any) {
+
     event.preventDefault();
-
-    const formData = new FormData(event.target as HTMLFormElement);
-
+    const formData = new FormData(event.target)
+    console.log(formData.get('email'));
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        body: formData,
-      });
+        const response = await fetch('/api/contact', {
+            method: 'post',
+            body: formData,
+        });
 
-      if (!response.ok) {
-        console.error('Failed to submit form:', response.statusText);
-      } else {
-        console.log('Form submitted successfully!');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
+        if (!response.ok) {
+            console.log("falling over")
+            throw new Error(`response status: ${response.status}`);
+        }
+        const responseData = await response.json();
+        console.log(responseData['message'])
+
+        alert('Message successfully sent');
+    } catch (err) {
+        console.error(err);
+        alert("Error, please try resubmitting the form");
     }
-  }
+  };
 
   return (
     <div className="w-full h-full flex shadow-2xl">
@@ -110,15 +113,18 @@ export function ContactForm() {
         <InfoContainer />
         <SocialContainer />
       </div>
-      <form onSubmit={handleSubmit} action="" className='w-[60%] p-10 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
-        <label htmlFor="fullName" className='flex flex-col'>Full Name
-          <input type="text" id='fullName' placeholder='Full Name' className='p-4 bg-gray-200' />
+      <form onSubmit={handleSubmit} className='w-[60%] p-10 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
+        <label htmlFor="name" className='flex flex-col'>Full Name
+          <input type="text" id='name' name='name' placeholder='John Doe' className='p-4 bg-gray-200' />
         </label>
         <label htmlFor="email" className='flex flex-col'>Email
-          <input type="email" id='email' placeholder='Email' className='p-4 bg-gray-200' />
+          <input type="email" id='email' name='email' placeholder='johndoe@gmail.com' className='p-4 bg-gray-200' />
         </label>
-        <label htmlFor="phoneNumber" className='flex flex-col'>Phone Number
-          <input type="text" id='phoneNumber' placeholder='Phone Number' className='p-4 bg-gray-200' />
+        <label htmlFor="number" className='flex flex-col'>Phone Number
+          <input type="number" id='number' name='number' placeholder='Phone Number' className='p-4 bg-gray-200' />
+        </label>
+        <label htmlFor="message" className='flex flex-col'>Message
+          <textarea id='message' name='message' placeholder='Write us a short message about what you need.' className='p-4 bg-gray-200' />
         </label>
         <button 
         className='bg-gray-1 text-white px-8 py-3 rounded-md hover:bg-point'>Send Information</button>

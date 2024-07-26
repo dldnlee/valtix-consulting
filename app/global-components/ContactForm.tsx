@@ -115,13 +115,13 @@ export function ContactForm() {
       </div>
       <form onSubmit={handleSubmit} className='w-[60%] p-10 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
         <label htmlFor="name" className='flex flex-col'>Full Name
-          <input type="text" id='name' name='name' placeholder='John Doe' className='p-4 bg-gray-200' />
+          <input required type="text" id='name' name='name' placeholder='John Doe' className='p-4 bg-gray-200' />
         </label>
         <label htmlFor="email" className='flex flex-col'>Email
-          <input type="email" id='email' name='email' placeholder='johndoe@gmail.com' className='p-4 bg-gray-200' />
+          <input required type="email" id='email' name='email' placeholder='johndoe@gmail.com' className='p-4 bg-gray-200' />
         </label>
         <label htmlFor="number" className='flex flex-col'>Phone Number
-          <input type="number" id='number' name='number' placeholder='Phone Number' className='p-4 bg-gray-200' />
+          <input required type="number" id='number' name='number' placeholder='Phone Number' className='p-4 bg-gray-200' />
         </label>
         <label htmlFor="message" className='flex flex-col'>Message
           <textarea id='message' name='message' placeholder='Write us a short message about what you need.' className='p-4 bg-gray-200' />

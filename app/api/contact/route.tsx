@@ -16,10 +16,6 @@ export async function POST(request : NextRequest) {
     const email = formData.get('email')
     const number = formData.get('number')
     const message = formData.get('message')
-    
-    // console.log(username);
-    
-    console.log(username)
 
     // create transporter object
     const transporter = nodemailer.createTransport({

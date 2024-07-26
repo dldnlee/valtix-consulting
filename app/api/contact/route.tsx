@@ -6,9 +6,9 @@ const nodemailer = require('nodemailer');
 
 export async function POST(request : NextRequest) {
 
-    const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME;
-    const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD;
-    const myEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL;
+    const username = process.env.EMAIL_USERNAME;
+    const password = process.env.EMAIL_PASSWORD;
+    const myEmail = process.env.PERSONAL_EMAIL;
 
     console.log("dealing with request")
     const formData = await request.formData()

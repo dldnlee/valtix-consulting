@@ -16,11 +16,6 @@ const contactInfo = [
     img: location
   },
   {
-    type: 'Phone Number',
-    info: '+12 1234 1234',
-    img: phone
-  },
-  {
     type: 'Email Address',
     info: 'client@originconsultinggroup.com',
     img: email
@@ -41,9 +36,9 @@ const socialInfo = [
 
 function SocialButtons({ img }: { img: StaticImageData }) {
   return (
-    <button className=' bg-black w-fit rounded-full hover:bg-white p-2 group'>
-      <Image src={img} alt="" className='size-[20px] invert group-hover:invert-0' />
-    </button>
+    <div className=' bg-black w-fit rounded-full hover:bg-white p-2 group size-[20px] hidden'>
+      {/* <Image src={img} alt="" className='size-[20px] invert group-hover:invert-0' /> */}
+    </div>
   )
 }
 

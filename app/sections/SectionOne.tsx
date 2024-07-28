@@ -1,6 +1,7 @@
 'use client'
 import { introBannerText } from "@/app/text"
 import { Button } from "@/app/global-components/Buttons"
+import {motion} from 'framer-motion';
 
 import { Navigation, Pagination, Autoplay, A11y, EffectFade } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -35,8 +36,17 @@ const slideContents = [
   },
 ]
 
+interface SlideProps {
+  bgImage: string; 
+  heading: string;
+  subHeading: string;
+  route: string;
+  btnText: string;
+  isActive: boolean;
+}
 
-function Slide({bgImage, heading, subHeading, route, btnText="Learn More"} : {bgImage: string; heading: string, subHeading: string, route: string, btnText: string}) {
+
+function Slide({bgImage, heading, subHeading, route, btnText="Learn More", isActive} : SlideProps) {
   return (
     <div className={`
     w-full 
@@ -44,9 +54,36 @@ function Slide({bgImage, heading, subHeading, route, btnText="Learn More"} : {bg
     ${bgImage} bg-center bg-cover bg-no-repeat text-white flex items-center overflow-hidden`}>
       <div className="p-default-padding">
         <div className="flex flex-col gap-10 w-[600px]">
-          <h1 className="text-4xl font-semibold leading-none">{heading}</h1>
-          <p className="text-lg">{subHeading}</p>
-          <Button text={btnText} padding={"p-4"} bgColor="bg-transparent" route={route}/>
+          <div className="overflow-hidden">
+            <motion.h1
+            initial={{opacity:1, y:-1000}}
+            animate={
+              isActive ? {opacity:1, y:0} : {opacity: 1, y: -1000}}
+            transition={{
+              duration: 2
+            }}
+            className="text-4xl font-semibold leading-none overflow-hidden">{heading}</motion.h1>
+          </div>
+          <div className="overflow-hidden flex flex-col gap-6">
+            <motion.p
+            initial={{opacity:1, x:-1000}}
+            animate={
+              isActive ? {opacity:1, x:0} : {opacity: 1, x: -1000}}
+              transition={{
+                duration: 2
+              }}
+            className="text-lg overflow-hidden">{subHeading}</motion.p>
+            <motion.div
+            initial={{opacity:0, y:100}}
+            animate={
+              isActive ? {opacity:1, y:0} : {opacity: 0, y: 100}}
+              transition={{
+                duration: 1.5
+              }}
+              >
+              <Button text={btnText} padding={"p-4"} bgColor="bg-transparent" route={route}/>
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>
@@ -73,8 +110,10 @@ export default function SectionOne() {
         {
           slideContents.map((item, index) => (
             <SwiperSlide key={index}>
-              <Slide bgImage={item.bgImage} heading={item.heading} subHeading={item.subHeading}
-              route={item.route} btnText={item.btnText}/>
+              {({isActive}) => (
+                <Slide bgImage={item.bgImage} heading={item.heading} subHeading={item.subHeading}
+                route={item.route} btnText={item.btnText} isActive={isActive}/>
+              )}
             </SwiperSlide>
           ))
         }

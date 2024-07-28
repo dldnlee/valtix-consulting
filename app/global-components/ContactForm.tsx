@@ -53,7 +53,7 @@ function Info({ img, info }: { img: StaticImageData, info: string }) {
 
 function InfoContainer() {
   return (
-    <div className='flex flex-col gap-6'>
+    <div className='flex flex-col gap-6 text-lg'>
       {contactInfo.map((item, idx) => (
         <Info key={idx} img={item.img} info={item.info} />
       ))}
@@ -83,7 +83,6 @@ export function ContactForm() {
             method: 'post',
             body: formData,
         });
-
         if (!response.ok) {
             console.log("falling over")
             throw new Error(`response status: ${response.status}`);
@@ -102,7 +101,7 @@ export function ContactForm() {
     <div className="w-full h-full flex shadow-2xl">
       <div className="w-[40%] bg-gray-1 text-white p-8 flex flex-col justify-between rounded-s-xl">
         <div>
-          <h1 className='text-xl font-semibold'>Contact Information</h1>
+          <h1 className='text-2xl font-semibold'>Contact Information</h1>
           <p className='text-md'>We are always excited to assist you!</p>
         </div>
         <InfoContainer />

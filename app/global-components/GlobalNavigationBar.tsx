@@ -5,6 +5,10 @@ import originLogo from "@/app/assets/icons/origin-logo.svg";
 
 const navigateItems = [
   {
+    category: 'Home',
+    path: '/'
+  },
+  {
     category: 'Services',
     path: '/services'
   },
@@ -12,10 +16,6 @@ const navigateItems = [
     category: 'About Us',
     path: '/about'
   },
-  {
-    category: 'Contact',
-    path: '/contact'
-  }
 ]
 
 export default function GlobalNavigationBar() {
@@ -46,7 +46,7 @@ export default function GlobalNavigationBar() {
 
   return (
     <div 
-      className={`z-20 group font-semibold flex w-full items-center hover:bg-gray-1 hover:text-white gap-20 px-10 py-5 fixed top-0 left-0 ${GNBStyle}`}>
+      className={`z-20 group font-semibold flex w-full items-center hover:bg-gray-1 hover:text-white gap-20 py-6 fixed top-0 left-0 ${GNBStyle} px-[200px]`}>
       <Link href='/'>
         <Image src={originLogo} alt="Origin Consulting Group" className={`w-[120px] invert`}/>
       </Link>

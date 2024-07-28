@@ -94,8 +94,6 @@ function Slider() {
         dynamicBullets: true,
         clickable: true
       }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
       className='w-[600px] h-[450px] bg-gray-4'
     >
         {slideContent.map((item, index) => (

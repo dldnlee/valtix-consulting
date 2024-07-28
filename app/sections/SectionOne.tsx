@@ -60,7 +60,7 @@ function Slide({bgImage, heading, subHeading, route, btnText="Learn More", isAct
             animate={
               isActive ? {opacity:1, y:0} : {opacity: 1, y: -1000}}
             transition={{
-              duration: 2
+              duration: 1.5
             }}
             className="text-4xl font-semibold leading-none overflow-hidden">{heading}</motion.h1>
           </div>

@@ -17,14 +17,26 @@
 
 .gradient-with-bg-1 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/night-skyline2.jpg');
+  animation: zoomin 5s linear infinite alternate;
 }
 
 .gradient-with-bg-2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/downtown-cityscape-night-seoul-south-korea.jpg');
+  animation: zoomin 5s linear infinite alternate;
 }
 
 .gradient-with-bg-3 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/new-york-city-manhattan-chrysler-building-night.jpg');
+  animation: zoomin 5s linear infinite alternate;
+}
+
+@keyframes zoomin {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 105%;
+  }
 }
 
 /* Backgrounds for Sections in services */

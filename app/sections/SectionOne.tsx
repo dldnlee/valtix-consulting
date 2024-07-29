@@ -23,14 +23,14 @@ const slideContents = [
   {
     bgImage: 'gradient-with-bg-2',
     heading: 'Digital Transformation.',
-    subHeading: 'Get help from our expert consultants to achieve transformative results. We provide insightful guidance and actionable plans to help you navigate complex challenges and seize new opportunities.',
+    subHeading: 'In the digital age, staying competitive requires embracing technology. Our Digital Transformation services integrate cutting-edge technologies like AI and IoT to revolutionize your operations and create new value propositions.',
     route: '/services',
     btnText:'Learn More'
   },
   {
     bgImage: 'gradient-with-bg-3',
     heading: 'Startup Advisory at your hands.',
-    subHeading: 'Get help from our expert consultants to achieve transformative results. We provide insightful guidance and actionable plans to help you navigate complex challenges and seize new opportunities.',
+    subHeading: 'Our Startup Advisory service empowers emerging businesses to carve out their niche and scale effectively in competitive markets. By partnering with us, you gain access to expert advice tailored to the unique challenges and opportunities faced by startups.',
     route: '/services',
     btnText:'Learn More'
   },
@@ -70,7 +70,7 @@ function Slide({bgImage, heading, subHeading, route, btnText="Learn More", isAct
             animate={
               isActive ? {opacity:1, x:0} : {opacity: 1, x: -1000}}
               transition={{
-                duration: 2
+                duration: 1.5
               }}
             className="text-lg overflow-hidden">{subHeading}</motion.p>
             <motion.div
@@ -117,15 +117,6 @@ export default function SectionOne() {
             </SwiperSlide>
           ))
         }
-        {/* <SwiperSlide>
-          <Slide />  
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide />  
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide />  
-        </SwiperSlide> */}
       </Swiper>
 
     </div>

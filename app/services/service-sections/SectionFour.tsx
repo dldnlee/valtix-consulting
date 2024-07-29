@@ -28,7 +28,6 @@ const variants = {
       duration: 3,
       type:'spring',
       stiffness: 100,
-      delay: 1
     }
   },
   'hidden-1': {
@@ -40,7 +39,6 @@ const variants = {
     duration: 3,
     type:'spring',
     stiffness: 100,
-    delay: 1
     }
   },
 }

@@ -5,12 +5,12 @@ import originLogo from "@/app/assets/icons/origin-logo.svg";
 
 const navigateItems = [
   {
-    category: 'Home',
+    category: 'Main',
     path: '/'
   },
   {
     category: 'Services',
-    path: '/services'
+    path: '/services',
   },
   {
     category: 'About Us',
@@ -22,6 +22,7 @@ export default function GlobalNavigationBar() {
   const [GNBStyle, setGNBStyle] = useState('');
   const [focus, setFocus] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const [selectedTab, setSelectedTab] = useState('/');
 
   function listenScrollEvent() {
     if (window.scrollY > 1) {
@@ -44,6 +45,17 @@ export default function GlobalNavigationBar() {
     })
   }, [focus, scrolling])
 
+  useEffect(() => {
+    const link = window.location.pathname;
+    if(link === '/') {
+      setSelectedTab('/');
+    } else if(link === '/services') {
+      setSelectedTab('/services');
+    } else if(link === '/about') {
+      setSelectedTab('/about');
+    }
+  }, [])
+
   return (
     <div 
       className={`z-20 group font-semibold flex w-full items-center hover:bg-gray-1 hover:text-white gap-20 py-6 fixed top-0 left-0 ${GNBStyle} px-[200px]`}>
@@ -54,7 +66,7 @@ export default function GlobalNavigationBar() {
         {
           navigateItems.map((item, idx) => {
             return (
-              <li key={idx} className='text-md hover:text-beige'>
+              <li key={idx} className={`text-md hover:text-beige ${selectedTab === item.path ? 'border-b border-beige text-beige box-content' : ''}`}>
                 <Link href={item.path} className='hover:text-point'>{item.category}</Link>
               </li>
             )

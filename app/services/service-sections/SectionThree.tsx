@@ -23,7 +23,6 @@ const variants = {
     duration: 3,
     type:'spring',
     stiffness: 100,
-    delay: .5
   }},
   'transition-1': {
     opacity:1, y:0,
@@ -31,7 +30,7 @@ const variants = {
     duration: 3,
     type:'spring',
     stiffness: 100,
-    delay: .7
+    delay: .3
   }},
   'transition-2': {
     opacity:1, y:0,
@@ -39,7 +38,7 @@ const variants = {
     duration: 3,
     type:'spring',
     stiffness: 100,
-    delay: .9
+    delay: .5
   }}
 }
 

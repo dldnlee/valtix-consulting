@@ -100,7 +100,7 @@ export default function GlobalNavigationBar() {
                   <Link 
                   href={item.path} 
                   className='hover:text-point'>{item.category}</Link>
-                  <Image src={rightTriangle} alt="right triangle" className={`w-[5px] ${dropDown ? '-rotate-90' : 'rotate-90'} transition-transform`}/> 
+                  {/* <Image src={rightTriangle} alt="right triangle" className={`w-[5px] ${dropDown ? '-rotate-90' : 'rotate-90'} transition-transform`}/>  */}
                 </li>
               ) : (
                 <li key={idx} className='text-md hover:text-beige'>
@@ -111,7 +111,7 @@ export default function GlobalNavigationBar() {
           }
         </ul>
       </div>
-      <div 
+      {/* <div 
       onMouseLeave={() => {setDropDown(false)}}
       className={`bg-gray-1 mx-auto w-2/3 h-[200px] text-white left-0 -top-full rounded-b-2xl ${dropDown ? 'block' : 'hidden'}`}>
         <h3>Our Services</h3>
@@ -126,7 +126,7 @@ export default function GlobalNavigationBar() {
             ))
           }
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }

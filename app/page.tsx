@@ -7,8 +7,6 @@ import SectionFive from "./sections/SectionFive"
 
 export default function Home() {
 
-  console.log('bombom')
-
   return ( 
     <div className="min-h-screen w-full text-md">
       <SectionOne/>

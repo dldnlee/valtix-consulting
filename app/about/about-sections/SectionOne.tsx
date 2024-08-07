@@ -1,4 +1,4 @@
-import promoImage from '@/app/assets/images/about-promo-image.png'
+import promoImage from '@/app/assets/images/about-promo-image.webp'
 import Image from 'next/image'
 
 export default function SectionOne() {

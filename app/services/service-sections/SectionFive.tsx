@@ -1,5 +1,5 @@
 'use client'
-import phoneMockup from '@/app/assets/images/origin-iphone-mockup.png'
+import phoneMockup from '@/app/assets/images/origin-iphone-mockup.webp'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 
@@ -17,7 +17,7 @@ export default function SectionFive() {
       viewport={{once:true}}
       transition={{
         delay: 0,
-        duration: 2,
+        duration: 2, 
         type:'spring',
         stiffness: 40,
       }}

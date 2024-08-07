@@ -9,10 +9,10 @@ import Image, { StaticImageData } from 'next/image';
 import rightArrow from '@/app/assets/icons/right-arrow.png'
 
 import startupAdvisory from '@/app/assets/images/business-executives-using-laptop.webp';
-import growthStrategy from '@/app/assets/images/cropped-business-people-discussing-charts-diagrams-office.jpg';
-import operationEfficiency from '@/app/assets/images/asian-businessman-presenting-analysis-cost-graph-corporate-colleagues-meeting-office.jpg';
-import digitalTransformation from '@/app/assets/images/woman-touching-smart-technology-holographic-interface.jpg';
-import strategyConsulting from '@/app/assets/images/table-consulting-paperwork-professional-invest-executive.jpg';
+import growthStrategy from '@/app/assets/images/cropped-business-people-discussing-charts-diagrams-office.webp';
+import operationEfficiency from '@/app/assets/images/asian-businessman-presenting-analysis-cost-graph-corporate-colleagues-meeting-office.webp';
+import digitalTransformation from '@/app/assets/images/woman-touching-smart-technology-holographic-interface.webp';
+import strategyConsulting from '@/app/assets/images/table-consulting-paperwork-professional-invest-executive.webp';
 
 
 

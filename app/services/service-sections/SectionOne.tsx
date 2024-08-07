@@ -1,7 +1,4 @@
-'use client'
-import model from '@/app/assets/images/model-service.png'
-import Image from 'next/image'
-import {motion} from 'framer-motion'
+
 
 export default function SectionOne() {
   return (
@@ -13,16 +10,6 @@ export default function SectionOne() {
         </div>
         <p className='lg:text-md md:text-sm w-[530px]'>At Origin Consulting Group, we believe that every great  accomplishment starts with a well-drafted blueprint. Our mission is to  guide you through the complexities of today&apos;s business landscape, providing customized strategies that are as unique as your vision.</p>
       </div>
-      {/* <motion.div
-      initial={{opacity:0, y:50}}
-      whileInView={{opacity:1, y:0}}
-      viewport={{once: true}}
-      transition={{
-        duration: .5
-      }}
-      >
-        <Image src={model} alt="Model Crossing Arms Smiling" className='lg:w-[300px] md:w-[200px]' />
-      </motion.div> */}
     </div>
   )
 }

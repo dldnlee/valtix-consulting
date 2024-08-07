@@ -6,12 +6,12 @@ import rightTriangle from "@/app/assets/icons/right-triangle.svg"
 
 const navigateItems = [
   {
-    category: 'Home',
+    category: 'Main',
     path: '/'
   },
   {
     category: 'Services',
-    path: '/services'
+    path: '/services',
   },
   {
     category: 'About Us',
@@ -22,19 +22,23 @@ const navigateItems = [
 const serviceItems = [
   {
     service: 'Startup Advisory',
-    path: '/services/digital-transformation'
+    path: '/services'
+  },
+  {
+    service: 'Medium Enterprise',
+    path: '/services'
+  },
+  {
+    service: 'Operational Efficiency',
+    path: '/services'
   },
   {
     service: 'Digital Transformation',
-    path: '/services/digital-transformation'
+    path: '/services'
   },
   {
-    service: 'Digital Transformation',
-    path: '/services/digital-transformation'
-  },
-  {
-    service: 'Digital Transformation',
-    path: '/services/digital-transformation'
+    service: 'Strategy Consulting',
+    path: '/services'
   },
 ]
 
@@ -113,12 +117,12 @@ export default function GlobalNavigationBar() {
       </div>
       {/* <div 
       onMouseLeave={() => {setDropDown(false)}}
-      className={`bg-gray-1 mx-auto w-2/3 h-[200px] text-white left-0 -top-full rounded-b-2xl ${dropDown ? 'block' : 'hidden'}`}>
-        <h3>Our Services</h3>
-        <ul className="grid grid-rows-3 grid-cols-3">
+      className={`bg-gray-1 mx-auto w-2/3 h-[200px] text-white left-0 -top-full rounded-b-2xl ${dropDown ? 'block' : 'hidden'} p-4`}>
+        <h3 className="text-2xl pb-5">Our Services</h3>
+        <ul className="grid grid-rows-3 grid-cols-3 gap-5">
           {
             serviceItems.map((item, index) => (
-              <li key={index}>
+              <li key={index} className="hover:text-beige hover:underline underline-offset-4">
                 <Link href={item.path}>
                   {item.service}
                 </Link>

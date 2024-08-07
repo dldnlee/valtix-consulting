@@ -2,7 +2,7 @@
 import gear from '@/app/assets/icons/gears.png'
 import project_management from '@/app/assets/icons/project-management.png'
 import Image, { StaticImageData } from 'next/image'
-import operationalEfficiency from '@/app/assets/images/asian-businessman-presenting-analysis-cost-graph-corporate-colleagues-meeting-office.jpg'
+import operationalEfficiency from '@/app/assets/images/asian-businessman-presenting-analysis-cost-graph-corporate-colleagues-meeting-office.webp'
 import {motion} from 'framer-motion'
 
 const keypoints = [
@@ -28,7 +28,6 @@ const variants = {
       duration: 3,
       type:'spring',
       stiffness: 100,
-      delay: 1
     }
   },
   'hidden-1': {
@@ -40,7 +39,6 @@ const variants = {
     duration: 3,
     type:'spring',
     stiffness: 100,
-    delay: 1
     }
   },
 }

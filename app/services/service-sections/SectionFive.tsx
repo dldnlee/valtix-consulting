@@ -1,5 +1,5 @@
 'use client'
-import phoneMockup from '@/app/assets/images/origin-iphone-mockup.png'
+import phoneMockup from '@/app/assets/images/origin-iphone-mockup.webp'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 

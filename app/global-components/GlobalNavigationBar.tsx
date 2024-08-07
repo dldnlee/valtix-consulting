@@ -25,7 +25,11 @@ const serviceItems = [
     path: '/services/digital-transformation'
   },
   {
-    service: 'Digital Transformation',
+    service: 'Medium Enterprise',
+    path: '/services/digital-transformation'
+  },
+  {
+    service: 'Operational Efficiency',
     path: '/services/digital-transformation'
   },
   {
@@ -33,7 +37,7 @@ const serviceItems = [
     path: '/services/digital-transformation'
   },
   {
-    service: 'Digital Transformation',
+    service: 'Strategy Consulting',
     path: '/services/digital-transformation'
   },
 ]

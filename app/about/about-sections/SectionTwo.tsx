@@ -1,5 +1,5 @@
 import Image from "next/image"
-import bannerMockup from '@/app/assets/images/billboard-mockup.png'
+import bannerMockup from '@/app/assets/images/billboard-mockup.webp'
 
 
 export default function SectionTwo() {

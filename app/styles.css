@@ -16,7 +16,7 @@
 /* Backgrounds for the main banner */
 
 .gradient-with-bg-1 {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/night-skyline2.jpg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/night-skyline2.webp');
   animation: zoomin 5s linear infinite alternate;
 }
 
@@ -42,12 +42,12 @@
 /* Backgrounds for Sections in services */
 
 .services-img-bg {
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('assets/images/cropped-business-people-discussing-charts-diagrams-office.jpg');
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('assets/images/cropped-business-people-discussing-charts-diagrams-office.webp');
 }
 
 
 .digital-transformation-bg {
-  background-image: url('assets/images/digital-transformation-bg.png');
+  background-image: url('assets/images/digital-transformation-bg.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

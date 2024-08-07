@@ -17,7 +17,7 @@ export default function SectionFive() {
       viewport={{once:true}}
       transition={{
         delay: 0,
-        duration: 2,
+        duration: 2, 
         type:'spring',
         stiffness: 40,
       }}

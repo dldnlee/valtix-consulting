@@ -117,9 +117,9 @@ export default function GlobalNavigationBar() {
       </div>
       <div 
       onMouseLeave={() => {setDropDown(false)}}
-      className={`bg-gray-1 mx-auto w-2/3 h-[200px] text-white left-0 -top-full rounded-b-2xl ${dropDown ? 'block' : 'hidden'} p-4`}>
-        <h3 className="text-2xl pb-5">Our Services</h3>
-        <ul className="grid grid-rows-3 grid-cols-3 gap-5">
+      className={`bg-gray-1 ml-60 w-[800px] h-fit text-white left-0 -top-full rounded-b-2xl ${dropDown ? 'block' : 'hidden'} py-5 px-10`}>
+        <h3 className="text-2xl mb-10 pb-1 border-b border-white/15">Our Services</h3>
+        <ul className="grid grid-rows-3 grid-cols-3 gap-10">
           {
             serviceItems.map((item, index) => (
               <li key={index} className="hover:text-beige hover:underline underline-offset-4">

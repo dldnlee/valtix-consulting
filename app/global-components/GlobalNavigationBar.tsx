@@ -92,7 +92,7 @@ export default function GlobalNavigationBar() {
                   <Link 
                   href={item.path} 
                   className='hover:text-point'>{item.category}</Link>
-                  {/* <Image src={rightTriangle} alt="right triangle" className={`w-[5px] ${dropDown ? '-rotate-90' : 'rotate-90'} transition-transform`}/>  */}
+                  <Image src={rightTriangle} alt="right triangle" className={`w-[5px] ${dropDown ? '-rotate-90' : 'rotate-90'} transition-transform`}/> 
                 </li>
               ) : (
                 <li key={idx} className='text-md hover:text-beige'>

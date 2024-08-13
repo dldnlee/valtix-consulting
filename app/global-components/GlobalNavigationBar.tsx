@@ -22,23 +22,23 @@ const navigateItems = [
 const serviceItems = [
   {
     service: 'Startup Advisory',
-    path: '/services'
+    path: '/services/startup-advisory'
   },
   {
     service: 'Medium Enterprise',
-    path: '/services'
+    path: '/services/medium-enterprise'
   },
   {
     service: 'Operational Efficiency',
-    path: '/services'
+    path: '/services/operational-efficiency'
   },
   {
     service: 'Digital Transformation',
-    path: '/services'
+    path: '/services/digital-transformation'
   },
   {
     service: 'Strategy Consulting',
-    path: '/services'
+    path: '/services/strategy-consulting'
   },
 ]
 
@@ -76,7 +76,7 @@ export default function GlobalNavigationBar() {
     onMouseLeave={() => {setFocus(false)}}
     className="fixed top-0 left-0 z-10 w-full ">
       <div 
-        className={`z-10 font-semibold flex w-full items-center gap-20 py-6 ${focus || scrolling ? 'bg-gray-1 text-white shadow-md sticky' : 'bg-none'} ${GNBStyle}  px-[200px]`}>
+        className={`z-10 font-semibold flex w-full items-center gap-20 py-6 ${focus || scrolling ? 'bg-gray-1 text-white shadow-md sticky' : 'bg-none'} ${GNBStyle}  px-[400px]`}>
         <Link href='/'>
           <Image src={originLogo} alt="Origin Consulting Group" className={`w-[120px] invert`}/>
         </Link>
@@ -105,7 +105,7 @@ export default function GlobalNavigationBar() {
       </div>
       <div 
       onMouseLeave={() => {setDropDown(false)}}
-      className={`bg-gray-1 ml-60 w-[800px] h-fit text-white left-0 -top-full rounded-b-2xl ${dropDown ? 'block' : 'hidden'} py-5 px-10`}>
+      className={`bg-gray-1 mx-auto w-[800px] h-fit text-white left-0 -top-full rounded-b-2xl ${dropDown ? 'block' : 'hidden'} py-5 px-10`}>
         <h3 className="text-2xl mb-10 pb-1 border-b border-white/15">Our Services</h3>
         <ul className="grid grid-rows-3 grid-cols-3 gap-10">
           {

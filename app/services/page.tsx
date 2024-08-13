@@ -64,10 +64,6 @@ export default function ServicesPage() {
     <div className="bg-white">
       <SectionOne />
       <Catalogue />
-      {/* <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-      <SectionFive /> */}
     </div>
   )
 }

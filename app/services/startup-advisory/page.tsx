@@ -1,15 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
-import leftArrow from "@/app/assets/icons/circle-arrow-left.svg"
 
-function BackToCatalog() {
-  return (
-    <div className="p-default-padding">
-      <Link href="/services" className="text-xl flex gap-3 group hover:text-beige"><Image src={leftArrow} alt="Left arrow" className="w-[30px]" />Back to Catalog</Link>
-    </div>
-  )
-}
-
+import ServicePagination from "../components/ServicePagination"
+import DividingText from "../components/DividingText"
+import BackToCatalog from "../components/BackToCatalog"
 
 const keypoints = [
   {
@@ -29,29 +23,30 @@ const keypoints = [
 
 export default function StartupAdvisory() {
   return (
-    <div className="pt-[80px]">
+    <div className="pt-[80px] bg-white">
       <BackToCatalog />
       <hr className="border-black/20"/>
-      <div className="p-default-padding">
+      <div className="p-default-padding flex flex-col gap-10">
         <h1 className="text-3xl">Startup Advisory</h1>
-        <p className="text-md w-[530px]">Our Startup Advisory service empowers emerging businesses to carve out their niche and scale effectively in competitive markets. By partnering with us, you gain access to expert advice tailored to the unique challenges and opportunities faced by startups.</p>
+        <p className="text-md w-[530px] leading-8">Our Startup Advisory service empowers emerging businesses to carve out their niche and scale effectively in competitive markets. By partnering with us, you gain access to expert advice tailored to the unique challenges and opportunities faced by startups.</p>
       </div>
-      <div className="flex w-full items-center">
-        <hr className="border-black/20 w-full"/>
-        <p className="w-[500px] text-center text-xl">How We Help</p>
-        <hr className="border-black/20 w-full"/>
-      </div>
+      <DividingText text="How We Help"/>
       <div className="p-default-padding flex flex-col gap-10">
         {
           keypoints.map((item, idx) => (
-            <div key={idx} className="w-[800px]">
-              <p className="text-xl">{item.keypoint}</p>
-              <p className="text-lg">{item.text}</p>
+            <div key={idx} className="w-[800px] flex flex-col gap-3">
+              <p className="text-xl font-semibold ">{item.keypoint}</p>
+              <p className="text-lg leading-8">{item.text}</p>
             </div>
           ))
         }
-
       </div>
+      <DividingText text="Explore Our Services" styling='w-[700px]'/>
+      <ServicePagination 
+      text1="Strategy Consulting" 
+      link1="/services/strategy-consulting"
+      text2="Growth Strategy for Medium Enterprises"
+      link2="/services/medium-enterprise" />
     </div>
   )
 }

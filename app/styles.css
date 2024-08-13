@@ -10,7 +10,7 @@
 }
 
 .sliding-banner {
-  animation: swipe 2000 linear infinite backwards;
+  animation: swipe 20000 linear infinite backwards;
 }
 
 /* Backgrounds for the main banner */

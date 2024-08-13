@@ -2,7 +2,7 @@
 
 export default function SectionOne() {
   return (
-    <div className="bg-white lg:p-default-padding md:p-medium-padding overflow-hidden flex items-top justify-start lg:py-[220px] md:py-[220px] border-b bg-white-abstract-pattern-1 bg-cover bg-bottom bg-no-repeat">
+    <div className="bg-white p-default-padding overflow-hidden flex items-top justify-start py-[150px]  border-b bg-white-abstract-pattern-1 bg-cover bg-bottom bg-no-repeat">
       <div className="flex flex-col gap-6 ">
         <div>
           <h2 className="lg:text-md md:text-sm text-gray-2">ORIGIN CONSULTING GROUP</h2>

@@ -19,7 +19,7 @@ const config: Config = {
         "white-abstract-pattern-5": "url('./assets/images/white-abstract-background-5.webp')",
       },
       padding:  {
-        "default-padding": "60px 200px",
+        "default-padding": "60px 400px",
         "medium-padding": "60px 50px"
       },
       keyframes: {
@@ -29,7 +29,7 @@ const config: Config = {
         }
       },    
       animation: {
-        'infinite-scroll': 'infinite-scroll 30s linear infinite',
+        'infinite-scroll': 'infinite-scroll 60s linear infinite',
       },
       colors: {
         "gray-1": "#353535",

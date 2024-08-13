@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Link from 'next/link';
 
 import Image, { StaticImageData } from 'next/image';
 import rightArrow from '@/app/assets/icons/right-arrow.png'
@@ -22,30 +23,35 @@ const slideContent = [
     image: startupAdvisory,
     alt: 'Light Bulb',
     subheading: "We provide comprehensive support to startups, guiding them from concept to market with services including business model validation, market entry strategies, and fundraising assistance",
+    link: '/services/startup-advisory',
   }, 
   {
     heading: "Growth Strategy for Medium Enterprises",
     image: growthStrategy,
     alt: 'Light Bulb',
     subheading: "Helping medium-sized businesses scale operations, improve market position, and drive innovation through targeted strategies that foster long-term success.",
+    link: '/services/medium-enterprise',
   },
   {
     heading: "Operational Efficiency",
     image: operationEfficiency,
     alt: 'Light Bulb',
     subheading: "Assisting businesses in optimizing processes to boost productivity, reduce costs, and enhance overall performance using the latest in technology and best practices.",
+    link: '/services/operational-efficiency',
   },
   {
     heading: "Digital Transformation",
     image: digitalTransformation,
     alt: 'Light Bulb',
     subheading: "Facilitating the integration of digital technologies to streamline operations and enhance customer engagement, tailored specifically to the needs of growing businesses.",
+    link: '/services/digital-transformation',
   },
   {
     heading: "Strategy Consulting",
     image: strategyConsulting,
     alt: 'Light Bulb',
     subheading: "Offering strategic foresight and actionable plans that help businesses anticipate market trends and position themselves competitively.",
+    link: '/services/strategy-consulting',
   }
 ]
 
@@ -54,18 +60,19 @@ interface SlideProps {
   img: StaticImageData;
   alt: string;
   subheading: string;
+  link: string;
 }
 
-function Slide({heading, img, alt, subheading} : SlideProps) {
+function Slide({heading, img, alt, subheading, link} : SlideProps) {
   return (
-    <div className='m-2 bg-gradient-to-t from-black to-transparent to-70% text-white mx-auto w-[384px] h-[409px] overflow-hidden flex flex-col relative justify-end text-start rounded-lg shadow-lg shadow-gray-500'>
+    <Link href={link} className='m-2 group bg-gradient-to-t from-black to-transparent to-70% text-white hover:bg-black/40 mx-auto w-[384px] h-[409px] overflow-hidden flex flex-col relative justify-end text-start rounded-lg '>
       <Image src={img} alt={alt} className='w-full h-full object-cover absolute mix-blend-multiply'/>
       <div className='p-4 z-10 flex flex-col gap-4'>
         <h2 className='font-extrabold text-[21px]'>{heading}</h2>
         <p className='font-sm text-[17px] line-clamp-2'>{subheading}</p>
-        <a href="/services" className='group text-[17px] font-bold hover:text-beige'>Learn More<Image src={rightArrow} width={16} alt="Right Arrow" className='inline-block ml-4 invert group-hover:translate-x-1 transition-transform'/></a>
+        <p className='text-[17px] font-bold hover:text-beige'>Learn More<Image src={rightArrow} width={16} alt="Right Arrow" className='inline-block ml-4 invert group-hover:translate-x-1 transition-transform'/></p>
       </div>
-    </div>
+    </Link>
   )
 }
 
@@ -73,16 +80,8 @@ function Slider() {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
-      effect={'coverflow'}
       slidesPerView={1.5}
       spaceBetween={0}
-      coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: false,
-      }}
       centeredSlides={true}
       navigation={true}
       loop={true}
@@ -98,7 +97,7 @@ function Slider() {
     >
         {slideContent.map((item, index) => (
           <SwiperSlide key={index}>
-            <Slide heading={item.heading} img={item.image} alt={item.alt} subheading={item.subheading}/>
+            <Slide heading={item.heading} img={item.image} alt={item.alt} subheading={item.subheading} link={item.link}/>
           </SwiperSlide>
         ))}
     </Swiper>

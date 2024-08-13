@@ -103,7 +103,7 @@ export default function GlobalNavigationBar() {
           }
         </ul>
       </div>
-      {/* <div 
+      <div 
       onMouseLeave={() => {setDropDown(false)}}
       className={`bg-gray-1 mx-auto w-[800px] h-fit text-white left-0 -top-full rounded-b-2xl ${dropDown ? 'block' : 'hidden'} py-5 px-10`}>
         <h3 className="text-2xl mb-10 pb-1 border-b border-white/15">Our Services</h3>
@@ -118,7 +118,7 @@ export default function GlobalNavigationBar() {
             ))
           }
         </ul>
-      </div> */}
+      </div>
     </div>
   )
 }

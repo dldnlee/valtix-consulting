@@ -29,7 +29,7 @@ const config: Config = {
         }
       },    
       animation: {
-        'infinite-scroll': 'infinite-scroll 30s linear infinite',
+        'infinite-scroll': 'infinite-scroll 60s linear infinite',
       },
       colors: {
         "gray-1": "#353535",

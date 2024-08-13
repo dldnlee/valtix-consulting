@@ -10,29 +10,29 @@ import rightArrow from "@/app/assets/icons/right-arrow.png";
 const catalogue = [
   {
     title: 'Startup Advisory',
-    link: '/helo'
+    link: '/services/startup-advisory'
   },
   {
     title: 'Growth Strategy for Medium Enterprises',
-    link: '/helo'
+    link: '/services/medium-enterprise'
   },
   {
     title: 'Operational Efficiency',
-    link: '/helo'
+    link: '/services/operational-efficiency'
   },
   {
     title: 'Digital Transformation',
-    link: '/helo'
+    link: '/services/digital-transformation'
   },
   {
     title: 'Strategy Consulting',
-    link: '/helo'
+    link: '/services/strategy-consulting'
   },
 ]
 
 function ServiceBlock({title, link} : {title:string, link:string}) {
   return (
-    <Link href={link} className="border w-[500px] h-[200px] p-5 px-10 border-black/50 flex flex-col gap-5 bg-white transition-all hover:shadow-xl hover:scale-[105%] group">
+    <Link href={link} className="border w-[400px] h-[200px] p-5 px-10 border-black/50 flex flex-col gap-5 bg-white transition-all hover:shadow-md hover:scale-[101%] group">
       <h3 className="text-2xl group-hover:font-semibold transition-all h-[100px] w-[400px]">{title}</h3>
       <hr  className="border-black/20"/>
       <p className="flex gap-5 text-lg items-center">

@@ -48,14 +48,6 @@ export default function GlobalNavigationBar() {
   const [focus, setFocus] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
-  // function listenScrollEvent() {
-  //   if (window.scrollY > 1) {
-  //     setGNBStyle('bg-gray-1 text-white shadow-md')
-  //   } else {
-  //     setGNBStyle('bg-none text-white')
-  //   }
-  // }
-
   function listenScrollEvent() {
     if (window.scrollY > 1) {
       setScrolling(true);
@@ -63,10 +55,6 @@ export default function GlobalNavigationBar() {
       setScrolling(false);
     }
   }
-
-  useEffect(() => {
-    
-  })
 
   useEffect(() => {
     const link = window.location.pathname;
@@ -88,7 +76,7 @@ export default function GlobalNavigationBar() {
     onMouseLeave={() => {setFocus(false)}}
     className="fixed top-0 left-0 z-10 w-full ">
       <div 
-        className={`z-10 font-semibold flex w-full items-center gap-20 py-6 ${GNBStyle} ${focus || scrolling ? 'bg-gray-1 text-white shadow-md sticky' : 'bg-none'} px-[200px]`}>
+        className={`z-10 font-semibold flex w-full items-center gap-20 py-6 ${focus || scrolling ? 'bg-gray-1 text-white shadow-md sticky' : 'bg-none'} ${GNBStyle}  px-[200px]`}>
         <Link href='/'>
           <Image src={originLogo} alt="Origin Consulting Group" className={`w-[120px] invert`}/>
         </Link>

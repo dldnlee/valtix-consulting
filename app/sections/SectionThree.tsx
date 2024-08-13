@@ -43,7 +43,7 @@ export default function SectionThree() {
         <p className="max-w-[600px]">Origin Consulting Group stands out for its specialized focus on startups and medium-sized businesses, combining sector-specific insights with a personalized approach to consulting.</p>
       </div>
       <div className="w-full h-full flex gap-20 justify-center items-center">
-        <Image src={mockup} alt="Origin Logo Mockup on a counter" width={723} height={436}/>
+        <Image src={mockup} alt="Origin Logo Mockup on a counter" width={650}/>
         <div className="w-[1px] h-[400px] bg-gray-4/50"></div>
         <div className="flex flex-col gap-14">
           {

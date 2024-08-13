@@ -32,12 +32,12 @@ const catalogue = [
 
 function ServiceBlock({title, link} : {title:string, link:string}) {
   return (
-    <Link href={link} className="border w-[400px] h-[200px] p-5 px-10 border-black/50 flex flex-col gap-5 bg-white transition-all hover:shadow-md hover:scale-[101%] group">
-      <h3 className="text-2xl group-hover:font-semibold transition-all h-[100px] w-[400px]">{title}</h3>
+    <Link href={link} className="border w-[350px] h-[250px] p-5 px-10 border-black/50 flex flex-col gap-5 bg-white transition-all hover:shadow-md hover:scale-[101%] group">
+      <h3 className="text-xl group-hover:font-semibold transition-all h-[100px] w-[300px]">{title}</h3>
       <hr  className="border-black/20"/>
       <p className="flex gap-5 text-lg items-center">
         Learn More
-        <Image src={rightArrow} alt="Right Arrow" className="w-[20px] h-fit group-hover:translate-x-4 transition-all" /> 
+        <Image src={rightArrow} alt="Right Arrow" className="w-[20px] h-fit group-hover:translate-x-2 transition-all" /> 
       </p>
     </Link>
   )

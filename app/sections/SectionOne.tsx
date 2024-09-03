@@ -52,8 +52,8 @@ function Slide({bgImage, heading, subHeading, route, btnText="Learn More", isAct
     w-full 
     h-[95vh]
     ${bgImage} bg-center bg-cover bg-no-repeat text-white flex items-center overflow-hidden`}>
-      <div className="p-default-padding">
-        <div className="flex flex-col gap-10 w-[600px]">
+      <div className="2xl:p-default-padding p-medium-padding">
+        <div className="flex flex-col gap-10 max-w-[600px]">
           <div className="overflow-hidden">
             <motion.h1
             initial={{opacity:1, y:-1000}}
@@ -62,7 +62,7 @@ function Slide({bgImage, heading, subHeading, route, btnText="Learn More", isAct
             transition={{
               duration: 1.5
             }}
-            className="text-4xl font-semibold leading-none overflow-hidden">{heading}</motion.h1>
+            className="2xl:text-4xl text-2xl font-semibold leading-none overflow-hidden">{heading}</motion.h1>
           </div>
           <div className="overflow-hidden flex flex-col gap-6">
             <motion.p
@@ -72,7 +72,7 @@ function Slide({bgImage, heading, subHeading, route, btnText="Learn More", isAct
               transition={{
                 duration: 1.5
               }}
-            className="text-lg overflow-hidden">{subHeading}</motion.p>
+            className="2xl:text-lg text-md overflow-hidden">{subHeading}</motion.p>
             <motion.div
             initial={{opacity:0, y:100}}
             animate={

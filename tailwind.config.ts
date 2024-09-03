@@ -20,7 +20,8 @@ const config: Config = {
       },
       padding:  {
         "default-padding": "60px 400px",
-        "medium-padding": "60px 50px"
+        "medium-padding": "60px 60px",
+        "small-padding": "60px 10px"
       },
       keyframes: {
         'infinite-scroll': {
@@ -47,6 +48,9 @@ const config: Config = {
         "md": "1rem",
         "sm": ".7rem",
         "xs": ".5rem"
+      },
+      transitionProperty: {
+        'height': 'height'
       }
     },
   },

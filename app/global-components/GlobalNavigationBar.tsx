@@ -1,8 +1,10 @@
+'use client'
 import { useEffect, useState } from "react"
 import Link from "next/link";
 import Image from "next/image";
 import originLogo from "@/app/assets/icons/origin-logo.svg";
 import rightTriangle from "@/app/assets/icons/right-triangle.svg"
+import hamburger from "@/app/assets/icons/hamburger-icon.svg"
 
 const navigateItems = [
   {
@@ -42,6 +44,25 @@ const serviceItems = [
   },
 ]
 
+
+function MiniGNB() {
+  
+  const [active, setActive] = useState(false);
+
+
+  return (
+    <div className={`fixed top-0 left-0 z-10 w-full md:hidden flex-col bg-gray-1 p-4 transition-height ${active ? 'h-[500px]' : ''}`}>
+      <button type="button" className="w-fit h-fit" onClick={() => {setActive(!active);}}>
+        <Image src={hamburger} alt="Menu Icon" className="w-[34px] invert"/>
+      </button>
+      <div className={`${active ? 'block' : 'hidden'}`}>
+        <h1 className={`${active ? 'block' : 'hidden'}`}>hello</h1>
+        <h1 className={`${active ? 'block' : 'hidden'}`}>hello</h1>
+      </div>
+    </div>
+  )
+}
+
 export default function GlobalNavigationBar() {
   const [GNBStyle, setGNBStyle] = useState('');
   const [dropDown, setDropDown] = useState(false);
@@ -74,9 +95,10 @@ export default function GlobalNavigationBar() {
     <div 
     onMouseEnter={() => {setFocus(true)}}
     onMouseLeave={() => {setFocus(false)}}
-    className="fixed top-0 left-0 z-10 w-full ">
+    className="fixed top-0 left-0 z-10 w-full">
+      <MiniGNB />
       <div 
-        className={`z-10 font-semibold flex w-full items-center gap-20 py-6 ${focus || scrolling ? 'bg-gray-1 text-white shadow-md sticky' : 'bg-none'} ${GNBStyle}  px-[400px]`}>
+        className={`md:flex hidden z-10 font-semibold w-full items-center gap-20 py-6 ${focus || scrolling ? 'bg-gray-1 text-white shadow-md sticky' : 'bg-none'} ${GNBStyle}  px-[400px]`}>
         <Link href='/'>
           <Image src={originLogo} alt="Origin Consulting Group" className={`w-[120px] invert`}/>
         </Link>

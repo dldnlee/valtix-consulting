@@ -65,7 +65,7 @@ interface SlideProps {
 
 function Slide({heading, img, alt, subheading, link} : SlideProps) {
   return (
-    <Link href={link} className='m-2 group bg-gradient-to-t from-black to-transparent to-70% text-white hover:bg-black/40 mx-auto w-[384px] h-[409px] overflow-hidden flex flex-col relative justify-end text-start rounded-lg '>
+    <Link href={link} className='m-2 group bg-gradient-to-t from-black to-transparent to-70% text-white hover:bg-black/40 mx-auto 2xl:w-[384px] 2xl:h-[409px] w-[300px] h-[320px] overflow-hidden flex flex-col relative justify-end text-start rounded-lg '>
       <Image src={img} alt={alt} className='w-full h-full object-cover absolute mix-blend-multiply'/>
       <div className='p-4 z-10 flex flex-col gap-4'>
         <h2 className='font-extrabold text-[21px]'>{heading}</h2>
@@ -93,7 +93,7 @@ function Slider() {
         dynamicBullets: true,
         clickable: true
       }}
-      className='w-[600px] h-[450px] bg-gray-4'
+      className='2xl:w-[600px] 2xl:h-[450px] w-[500px] h-[370px] bg-gray-4'
     >
         {slideContent.map((item, index) => (
           <SwiperSlide key={index}>

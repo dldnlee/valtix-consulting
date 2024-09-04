@@ -22,30 +22,10 @@ const contactInfo = [
   },
 ]
 
-const socialInfo = [
-  {
-    img: twitter
-  },
-  {
-    img: instagram
-  },
-  {
-    img: discord
-  },
-]
-
-function SocialButtons({ img }: { img: StaticImageData }) {
-  return (
-    <div className=' bg-black w-fit rounded-full hover:bg-white p-2 group size-[20px] hidden'>
-      {/* <Image src={img} alt="" className='size-[20px] invert group-hover:invert-0' /> */}
-    </div>
-  )
-}
-
 function Info({ img, info }: { img: StaticImageData, info: string }) {
   return (
-    <div className='flex items-center gap-6'>
-      <Image src={img} alt="" className='size-[30px] invert' />
+    <div className='flex items-center 2xl:gap-6 gap-2'>
+      <Image src={img} alt="" className='2xl:size-[30px] size-[16px] invert' />
       <p className='text-body-1'>{info}</p>
     </div>
   )
@@ -53,7 +33,7 @@ function Info({ img, info }: { img: StaticImageData, info: string }) {
 
 function InfoContainer() {
   return (
-    <div className='flex flex-col gap-6 text-lg'>
+    <div className='flex flex-col 2xl:gap-6 gap-4 2xl:text-lg'>
       {contactInfo.map((item, idx) => (
         <Info key={idx} img={item.img} info={item.info} />
       ))}
@@ -61,15 +41,6 @@ function InfoContainer() {
   )
 }
 
-function SocialContainer() {
-  return (
-    <div className='flex gap-6'>
-      {socialInfo.map((item, idx) => (
-        <SocialButtons key={idx} img={item.img} />
-      ))}
-    </div>
-  )
-}
 
 export function ContactForm() {
 
@@ -98,16 +69,15 @@ export function ContactForm() {
   };
 
   return (
-    <div className="w-full h-full flex shadow-2xl">
-      <div className="w-[40%] bg-gray-1 text-white p-8 flex flex-col justify-between rounded-s-xl">
+    <div className="w-full h-full flex 2xl:flex-row flex-col shadow-2xl">
+      <div className="2xl:w-[40%] bg-gray-1 gap-5 text-white p-8 flex flex-col justify-between 2xl:rounded-s-xl 2xl:rounded-t-none rounded-t-xl">
         <div>
-          <h1 className='text-2xl font-semibold'>Contact Information</h1>
+          <h1 className='2xl:text-2xl text-lg font-semibold'>Contact Information</h1>
           <p className='text-md'>We are always excited to assist you!</p>
         </div>
         <InfoContainer />
-        <SocialContainer />
       </div>
-      <form onSubmit={handleSubmit} className='w-[60%] p-10 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
+      <form onSubmit={handleSubmit} className='2xl:w-[60%] 2xl:p-10 p-5 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
         <label htmlFor="name" className='flex flex-col'>Full Name
           <input required type="text" id='name' name='name' placeholder='John Doe' className='p-4 bg-gray-200' />
         </label>

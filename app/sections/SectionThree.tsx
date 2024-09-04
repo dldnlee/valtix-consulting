@@ -44,7 +44,7 @@ export default function SectionThree() {
       </div>
       <div className="w-full h-full flex 2xl:flex-row flex-col gap-20 justify-center items-center">
         <Image src={mockup} alt="Origin Logo Mockup on a counter" width={723} height={436}/>
-        <div className="w-[1px] h-[400px] bg-gray-4/50"></div>
+        <div className="w-[1px] h-[400px] bg-gray-4/50 2xl:block hidden"></div>
         <div className="flex flex-col gap-14">
           {
             sellingPoints.map((item, index) => (

@@ -20,12 +20,12 @@ const reviews = [
 
 export default function SectionFour() {
   return (
-    <div className="w-full flex flex-col gap-10 items-center justify-center bg-white py-10 bg-gradient-to-r from-gray-3 via-white to-gray-3">
-      <h2 className="font-extrabold text-2xl text-gray-1">Reviews from our partners</h2>
+    <div className="w-full flex flex-col 2xl:gap-10 gap-5 items-center justify-center bg-white 2xl:py-10 py-5 bg-gradient-to-r from-gray-3 via-white to-gray-3">
+      <h2 className="font-extrabold 2xl:text-2xl text-gray-1">Reviews from our partners</h2>
       <SlidingBanner>
         {
           reviews.map((item, index) => (
-            <li key={index} className="w-[400px] font-extrabold text-gray-2">
+            <li key={index} className="2xl:w-[400px] w-[200px] font-extrabold 2xl:text-md text-sm text-gray-2">
               <p>{item.review}</p>
             </li>
           ))

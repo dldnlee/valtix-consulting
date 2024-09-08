@@ -1,6 +1,9 @@
 import ServiceSlider from './components/ServiceSlider';
 import { companyOverviewText } from '../text';
 import { Button } from '../global-components/Buttons';
+import Link from 'next/link';
+import Image from 'next/image';
+import rightArrow from '@/app/assets/icons/right-arrow.png'
 
 // Main Section
 export default function SectionTwo() {

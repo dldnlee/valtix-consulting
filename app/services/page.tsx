@@ -37,7 +37,7 @@ function ServiceBlock({title, link} : {title:string, link:string}) {
       <hr  className="border-black/20"/>
       <p className="flex gap-5 text-lg items-center">
         Learn More
-        <Image src={rightArrow} alt="Right Arrow" className="w-[20px] h-fit group-hover:translate-x-4 transition-all" /> 
+        <Image src={rightArrow} alt="Right Arrow" className="w-[20px] h-fit group-hover:translate-x-2 transition-all" /> 
       </p>
     </Link>
   )

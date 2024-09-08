@@ -40,7 +40,7 @@ const config: Config = {
         "beige": "#DBC8B0",
       },
       fontSize: {
-        "4xl": "4rem",
+        "4xl": "3.6rem",
         "3xl": "2.8rem",
         "2xl": "2rem",
         "xl": "1.7rem",

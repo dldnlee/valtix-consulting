@@ -22,17 +22,17 @@ export default function DigitalTransformation() {
     <div className="pt-[80px] bg-white">
       <BackToCatalog />
       <hr className="border-black/20"/>
-      <div className="p-default-padding flex flex-col gap-10">
-        <h1 className="text-3xl">Digital Transformation</h1>
-        <p className="text-md w-[530px] leading-8">In the digital age, staying competitive requires embracing technology. Our Digital Transformation services integrate cutting-edge technologies like AI and IoT to revolutionize your operations and create new value propositions.</p>
+      <div className="p-medium-padding 2xl:p-default-padding flex flex-col gap-10">
+        <h1 className="2xl:text-3xl text-2xl">Digital Transformation</h1>
+        <p className="text-md max-w-[530px] leading-8">In the digital age, staying competitive requires embracing technology. Our Digital Transformation services integrate cutting-edge technologies like AI and IoT to revolutionize your operations and create new value propositions.</p>
       </div>
       <DividingText text="How We Help"/>
-      <div className="p-default-padding flex flex-col gap-10">
+      <div className="2xl:p-default-padding p-medium-padding flex flex-col gap-10">
         {
           keypoints.map((item, idx) => (
-            <div key={idx} className="w-[800px] flex flex-col gap-3">
-              <p className="text-xl font-semibold ">{item.keypoint}</p>
-              <p className="text-lg leading-8">{item.text}</p>
+            <div key={idx} className="max-w-[800px] flex flex-col gap-3">
+              <p className="2xl:text-xl text-lg font-semibold ">{item.keypoint}</p>
+              <p className="2xl:text-lg text-md leading-8">{item.text}</p>
             </div>
           ))
         }

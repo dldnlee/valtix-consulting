@@ -5,7 +5,6 @@ import Image from "next/image";
 import originLogo from "@/app/assets/icons/origin-logo.svg";
 import rightTriangle from "@/app/assets/icons/right-triangle.svg"
 import hamburger from "@/app/assets/icons/hamburger-icon.svg"
-import closeIcon from "@/app/assets/icons/close_icon.svg"
 
 const navigateItems = [
   {
@@ -55,9 +54,12 @@ function MiniGNB() {
     <div className={`fixed top-0 left-0 z-10 w-full 2xl:hidden flex-col bg-gray-1 p-4 transition-height ${active ? 'h-fit' : ''}`}
     onMouseLeave={() => setActive(!active)}
     >
-      <button type="button" className="w-fit h-fit flex items-center" onClick={() => {setActive(!active);}}>
-        <Image src={hamburger} alt="Menu Icon" className="w-[30px] invert"/>
-      </button>
+      <div className="w-full flex justify-between items-center">
+        <button type="button" className="w-fit h-fit flex items-center" onClick={() => {setActive(!active);}}>
+          <Image src={hamburger} alt="Menu Icon" className="w-[30px] invert"/>
+        </button>
+        <Image src={originLogo} alt="Origin Logo" className="invert w-[90px]"/>
+      </div>
       <div className={`${active ? 'block' : 'hidden'} flex flex-col gap-5 py-10`}>
         {
           navigateItems.map((item, index) => (

@@ -20,7 +20,7 @@ const config: Config = {
       },
       padding:  {
         "default-padding": "60px 400px",
-        "medium-padding": "60px 30px",
+        "medium-padding": "60px 35px",
         "small-padding": "60px 10px"
       },
       keyframes: {

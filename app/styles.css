@@ -15,20 +15,36 @@
 
 /* Backgrounds for the main banner */
 
+
 .gradient-with-bg-1 {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/night-skyline2.webp');
-  animation: zoomin 5s linear infinite alternate;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0)), url('assets/images/night-skyline2.webp');
 
 }
 
 .gradient-with-bg-2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/downtown-cityscape-night-seoul-south-korea.webp');
-  animation: zoomin 5s linear infinite alternate;
 }
 
 .gradient-with-bg-3 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/new-york-city-manhattan-chrysler-building-night.webp');
-  animation: zoomin 5s linear infinite alternate;
+}
+
+@media screen and (min-width: 1300px) {
+  .gradient-with-bg-1 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/night-skyline2.webp');
+    animation: zoomin 5s linear infinite alternate;
+  
+  }
+  
+  .gradient-with-bg-2 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/downtown-cityscape-night-seoul-south-korea.webp');
+    animation: zoomin 5s linear infinite alternate;
+  }
+  
+  .gradient-with-bg-3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/new-york-city-manhattan-chrysler-building-night.webp');
+    animation: zoomin 5s linear infinite alternate;
+  }
 }
 
 @keyframes zoomin {

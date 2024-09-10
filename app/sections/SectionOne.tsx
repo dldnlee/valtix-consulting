@@ -50,8 +50,8 @@ function Slide({bgImage, heading, subHeading, route, btnText="Learn More", isAct
   return (
     <div className={`
     w-full 
-    h-[95vh]
-    2xl:${bgImage} bg-black bg-gradient-to-t from-gray-4 to-10% 2xl:bg-center 2xl: bg-cover bg-no-repeat text-white flex items-center overflow-hidden`}>
+    h-full
+    ${bgImage} to-10% bg-center bg-cover bg-no-repeat text-white flex items-center overflow-hidden`}>
       <div className="2xl:p-default-padding p-medium-padding">
         <div className="flex flex-col gap-10 max-w-[600px]">
           <div className="overflow-hidden">
@@ -105,7 +105,7 @@ export default function SectionOne() {
         crossFade: false
       }}
       loop={true}
-      className="w-full"
+      className="w-svh h-svh"
       >
         {
           slideContents.map((item, index) => (

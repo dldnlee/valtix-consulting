@@ -18,6 +18,7 @@
 .gradient-with-bg-1 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('assets/images/night-skyline2.webp');
   animation: zoomin 5s linear infinite alternate;
+
 }
 
 .gradient-with-bg-2 {

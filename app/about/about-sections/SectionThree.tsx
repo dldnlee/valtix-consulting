@@ -4,14 +4,14 @@ import Image, { StaticImageData } from 'next/image'
 
 function FounderCard() {
   return (
-    <div className='flex 2xl:flex-row flex-col items-center 2xl:shadow-lg'>
+    <div className='flex 2xl:flex-row flex-col items-center 2xl:shadow-lg 2xl:w-[1100px]'>
       <Image src={maykel} alt="" className='w-[400px]'/>
       <div className='flex flex-col gap-2 2xl:p-20 pt-10'>
         <div className='flex flex-col gap-1'>
           <h2 className='2xl:text-xl text-lg font-extrabold'>Maykel Soeharto, DipFA</h2>
           <h3 className='2xl:text-lg text-md font-bold'>Managing Director & Senior Partner</h3>
         </div>
-        <div className='flex flex-col gap-5 max-w-[650px]'>
+        <div className='flex flex-col gap-5 max-w-[600px]'>
           <p>
             Maykel Soeharto founded Origin Consulting Group with a clear mission to empower start-ups and medium-sized enterprises through innovative strategies and advanced technological solutions that drive growth and streamline operations. Recognizing a gap in the consulting landscape, he sought to address the unique challenges and opportunities faced by these businesses.
           </p>

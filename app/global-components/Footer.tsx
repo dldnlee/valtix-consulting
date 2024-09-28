@@ -11,7 +11,7 @@ export function Footer() {
           <Image src={logo} alt="Origin Logo" className='w-[100px] invert'/>
           <p className='2xl:text-sm max-w-[400px] text-xs'>Origin Consulting Group is a consulting firm focused on startups and medium-sized businesses. It helps early-stage companies succeed and improves the operations of mid-sized enterprises using advanced strategies and technology, enabling clients to navigate market challenges and achieve sustainable growth.</p>
         </div>
-        <ul className='w-full 2xl:flex flex flex-col justify-end gap-10 text-body-2'>
+        <ul className='w-full 2xl:flex-row flex flex-col justify-end gap-10 text-body-2'>
           <li className='hover:text-beige'>
             <Link href='/'>
             MAIN

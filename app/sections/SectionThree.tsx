@@ -29,7 +29,7 @@ function SellingPoint({index, heading, subheading}: SellingPointProps) {
       <p className="px-4 h-fit py-1 rounded-full w-fit bg-gray-1 text-white text-center">{index}</p>
       <div>
         <h3 className="text-[21px] font-bold text-beige">{heading}</h3>
-        <p className="text-[14px] max-w-[339px]">{subheading}</p>
+        <p className="text-[14px] max-w-[339px] w-[300px]">{subheading}</p>
       </div>
     </div>
   )
@@ -44,7 +44,7 @@ export default function SectionThree() {
       </div>
       <div className="w-full h-full flex 2xl:flex-row flex-col gap-20 justify-center items-center">
         <Image src={mockup} alt="Origin Logo Mockup on a counter" width={723} height={436}/>
-        <div className="w-[1px] h-[400px] bg-gray-4/50 2xl:block hidden"></div>
+        
         <div className="flex flex-col gap-14">
           {
             sellingPoints.map((item, index) => (

@@ -48,7 +48,7 @@ function Catalogue() {
     <div className="flex flex-col gap-10 pb-[200px] items-center p-medium-padding 2xl:p-default-padding">
       <h2 className="2xl:text-4xl text-2xl font-bold w-full">Our Services</h2>
       <hr />
-      <div className="grid 2xl:grid-cols-3 grid-cols-1 w-full gap-14">
+      <div className="grid 2xl:w-[1200px] 2xl:grid-cols-3 grid-cols-1 w-full gap-14">
         {
           catalogue.map((item, idx) => (
             <ServiceBlock key={idx} title={item.title} link={item.link} />

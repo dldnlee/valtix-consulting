@@ -106,7 +106,7 @@ export default function GlobalNavigationBar() {
     className="fixed top-0 left-0 z-10 w-full">
       <MiniGNB />
       <div 
-        className={`hidden 2xl:flex z-10 font-semibold w-full items-center gap-20 py-6 ${focus || scrolling ? 'bg-gray-1 text-white shadow-md sticky' : 'bg-none'} ${GNBStyle}  px-[400px]`}>
+        className={`hidden 2xl:flex z-10 font-semibold w-full justify-center items-center gap-20 py-6 ${focus || scrolling ? 'bg-gray-1 text-white shadow-md sticky' : 'bg-none'} ${GNBStyle}  px-[400px]`}>
         <Link href='/'>
           <Image src={originLogo} alt="Origin Consulting Group" className={`w-[120px] invert`}/>
         </Link>

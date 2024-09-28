@@ -19,7 +19,7 @@ const config: Config = {
         "white-abstract-pattern-5": "url('./assets/images/white-abstract-background-5.webp')",
       },
       padding:  {
-        "default-padding": "60px 400px",
+        "default-padding": "60px 350px",
         "medium-padding": "60px 35px",
         "small-padding": "60px 10px"
       },

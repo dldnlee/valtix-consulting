@@ -8,16 +8,20 @@ import BackToCatalog from "../components/BackToCatalog"
 
 const keypoints = [
   {
-    keypoint: 'Market Expansion',
-    text: 'We analyze market trends and customer needs to identify new growth opportunities, helping you expand into new markets or segments effectively. Our team conducts in-depth research to pinpoint the best opportunities for your business, ensuring that your expansion efforts are strategically targeted and poised for success. With our guidance, you can confidently enter new markets and achieve sustained growth.'
+    keypoint: 'Data-Driven Customization',
+    text: 'The roadmap will be built based on client data, industry benchmarks, and market trends. By using advanced analytics and performance metrics, the growth plan will be highly specific to the client’s business model, resources, and competitive landscape.'
   },
   {
-    keypoint: 'Operational Scalability',
-    text: 'Our strategic advice ensures your operations are scalable, supporting growth without compromising efficiency or quality. We assess your current operational processes and identify areas for improvement, implementing strategies that enable your business to handle increased demand seamlessly. By optimizing your operations, we help you maintain high standards of performance and customer satisfaction as you grow.'
+    keypoint: 'Real-Time Updates',
+    text: 'Unlike traditional business plans that may become outdated quickly, these growth roadmaps will be dynamic. Clients will receive periodic updates that reflect current market conditions, customer feedback, and any operational changes. This ensures they stay agile and responsive to opportunities or challenges.'
   },
   {
-    keypoint: 'Innovation Management',
-    text: 'We assist you in fostering a culture of innovation that continuously propels your business forward. Our services include developing innovation strategies, implementing processes to encourage creative thinking, and managing new product or service development. By cultivating an environment that prioritizes innovation, we help you stay ahead of the competition and drive continuous improvement within your organization.'
+    keypoint: 'Milestone Tracking',
+    text: 'Each roadmap will include clearly defined growth milestones, such as revenue targets, product launches, or expansion timelines. These will be used to measure progress and ensure that the company stays on track to meet its goals.'
+  },
+  {
+    keypoint: 'Tactical and Strategic Balance',
+    text: 'The roadmap will cover both short-term tactical actions (e.g., marketing campaigns, sales initiatives) and long-term strategic objectives (e.g., entering new markets, M&A activity). This blend allows clients to balance immediate growth with sustainable, long-term success.'
   },
 ]
 
@@ -29,8 +33,8 @@ export default function MediumEnterprises() {
       <BackToCatalog />
       <hr className="border-black/20"/>
       <div className="p-medium-padding 2xl:p-default-padding flex flex-col gap-10">
-        <h1 className="2xl:text-3xl text-2xl">Growth Strategy for Medium Enterprise</h1>
-        <p className="text-md max-w-[530px] leading-8">Our Growth Strategy services are designed to help established medium-sized enterprises identify new opportunities and expand their market presence. We provide the insights and tools needed to navigate market complexities and accelerate growth.</p>
+        <h1 className="2xl:text-3xl text-2xl">Hyper-Personalized Growth Roadmaps</h1>
+        <p className="text-md max-w-[530px] leading-8">This service focuses on creating tailored, dynamic growth strategies for each client, rather than offering static, one-size-fits-all plans. The growth roadmaps will be data-driven, regularly updated, and aligned with the client&apos;s unique goals, industry conditions, and market dynamics.</p>
       </div>
       <DividingText text="How We Help"/>
       <div className="2xl:p-default-padding p-medium-padding flex flex-col gap-10">
@@ -47,7 +51,7 @@ export default function MediumEnterprises() {
       <ServicePagination 
       text1="Startup Advisory" 
       link1="/services/startup-advisory"
-      text2="Operational Efficiency"
+      text2="Business Continuity and Crisis Management for Startups"
       link2="/services/operational-efficiency" />
     </div>
   )

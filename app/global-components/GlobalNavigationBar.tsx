@@ -27,11 +27,11 @@ const serviceItems = [
     path: '/services/startup-advisory'
   },
   {
-    service: 'Medium Enterprise',
+    service: 'Growth Roadmaps',
     path: '/services/medium-enterprise'
   },
   {
-    service: 'Operational Efficiency',
+    service: 'Crisis Management',
     path: '/services/operational-efficiency'
   },
   {

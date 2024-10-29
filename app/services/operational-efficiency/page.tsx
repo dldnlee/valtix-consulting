@@ -7,12 +7,20 @@ import BackToCatalog from "../components/BackToCatalog"
 
 const keypoints = [
   {
-    keypoint: 'Process Reengineering',
-    text: 'We redesign your existing processes to eliminate inefficiencies and enhance productivity, allowing you to do more with less. Our team conducts a thorough analysis of your current workflows, identifying bottlenecks and areas for improvement. By streamlining and optimizing your processes, we help you achieve greater efficiency, reduce costs, and increase overall productivity.'
+    keypoint: 'Crisis Preparedness Plans',
+    text: 'Develop customized contingency plans for clients that outline steps to be taken in the event of a disruption. This could include communication strategies, leadership roles during crises, backup suppliers, and alternative revenue streams.'
   },
   {
-    keypoint: 'Lean Management',
-    text: 'Our lean management practices instill a philosophy of continuous improvement, ensuring sustained enhancements in efficiency and quality. We implement lean principles to help you create a culture focused on eliminating waste, improving processes, and delivering value to customers. Through continuous assessment and refinement, we ensure your operations remain efficient and responsive to changing demands.'
+    keypoint: 'Risk Assessment and Mitigation',
+    text: 'Conduct a thorough risk assessment for each client to identify potential vulnerabilities in their operations, financial health, or market exposure. Based on this assessment, we’ll create risk mitigation strategies that clients can implement to safeguard their business.'
+  },
+  {
+    keypoint: 'Real-Time Crisis Management Support',
+    text: 'Provide on-demand consulting support during a crisis. This could include crisis leadership, emergency planning, media relations, and advising on damage control strategies.'
+  },
+  {
+    keypoint: 'Post-Crisis Recovery',
+    text: 'Offer recovery and business restoration plans to help companies get back on track after a disruption. This includes financial planning to manage losses, customer retention strategies, and process improvements to prevent future disruptions.'
   },
 ]
 
@@ -23,8 +31,8 @@ export default function OperationalEfficiency() {
       <BackToCatalog />
       <hr className="border-black/20"/>
       <div className="p-medium-padding 2xl:p-default-padding flex flex-col gap-10">
-        <h1 className="2xl:text-3xl text-2xl">Operational Efficiency</h1>
-        <p className="text-md max-w-[530px] leading-8">Enhance your company&apos;s productivity and efficiency with our Operational Efficiency services. We focus on streamlining processes and implementing lean practices that significantly reduce waste and enhance value to your customers.</p>
+        <h1 className="2xl:text-3xl text-2xl">Business Continuity and Crisis Management for Startups</h1>
+        <p className="text-md max-w-[530px] leading-8">This service offers startups and SMEs a robust framework to prepare for, manage, and recover from business disruptions. These disruptions could range from market downturns and regulatory changes to operational failures or sudden crises like a pandemic or cyberattack.</p>
       </div>
       <DividingText text="How We Help"/>
       <div className="2xl:p-default-padding p-medium-padding flex flex-col gap-10">
@@ -41,7 +49,7 @@ export default function OperationalEfficiency() {
       <ServicePagination 
       text1="Growth Strategy for Medium Enterprises" 
       link1="/services/medium-enterprise"
-      text2="Digital Transformation"
+      text2="Accelerated Digital Transformation for Emerging Markets "
       link2="/services/digital-transformation" />
     </div>
   )

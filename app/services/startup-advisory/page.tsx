@@ -45,7 +45,7 @@ export default function StartupAdvisory() {
       <ServicePagination 
       text1="Strategy Consulting" 
       link1="/services/strategy-consulting"
-      text2="Growth Strategy for Medium Enterprises"
+      text2="Hyper-Personalized Growth Roadmaps"
       link2="/services/medium-enterprise" />
     </div>
   )

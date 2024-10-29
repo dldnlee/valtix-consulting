@@ -12,7 +12,7 @@ const contactInfo = [
   },
   {
     type: 'Email Address',
-    info: 'client@originconsultinggroup.com',
+    info: 'client@valtixconsulting.com',
     img: email
   },
 ]

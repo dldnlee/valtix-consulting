@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import Link from "next/link";
 import Image from "next/image";
-import originLogo from "@/app/assets/icons/origin-logo.svg";
+import valtixLogo from "@/app/assets/icons/valtix-logo.svg";
 import rightTriangle from "@/app/assets/icons/right-triangle.svg"
 import hamburger from "@/app/assets/icons/hamburger-icon.svg"
 
@@ -58,7 +58,7 @@ function MiniGNB() {
         <button type="button" className="w-fit h-fit flex items-center" onClick={() => {setActive(!active);}}>
           <Image src={hamburger} alt="Menu Icon" className="w-[30px] invert"/>
         </button>
-        <Image src={originLogo} alt="Origin Logo" className="invert w-[90px]"/>
+        <Image src={valtixLogo} alt="Valtix Logo" className="invert w-[90px]"/>
       </div>
       <div className={`${active ? 'block' : 'hidden'} flex flex-col gap-5 py-10`}>
         {
@@ -108,7 +108,7 @@ export default function GlobalNavigationBar() {
       <div 
         className={`hidden 2xl:flex z-10 font-semibold w-full justify-center items-center gap-20 py-6 ${focus || scrolling ? 'bg-gray-1 text-white shadow-md sticky' : 'bg-none'} ${GNBStyle}  px-[400px]`}>
         <Link href='/'>
-          <Image src={originLogo} alt="Origin Consulting Group" className={`w-[120px] invert`}/>
+          <Image src={valtixLogo} alt="Valtix Consulting" className={`w-[120px] invert`}/>
         </Link>
         <ul className={`flex items-center gap-10`}>
           {

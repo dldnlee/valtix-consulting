@@ -1,6 +1,6 @@
 import { ContactForm } from "../global-components/ContactForm"
 import Image from "next/image"
-import bigLogo from '@/app/assets//icons/origin-logo-big.svg'
+import bigLogo from '@/app/assets//icons/valtix-logo-big.svg'
 
 export default function Contact() {
   return (
@@ -10,7 +10,7 @@ export default function Contact() {
         <div className='h-[200px] w-[1px] bg-black/20'></div>
         <div>
           <h1 className="text-3xl font-extrabold">Contact Us</h1>
-          <p className="text-md max-w-[500px]">We&apos;d love to hear from you! Whether you have questions about our services, need advice, or want to explore how we can help your business grow, our team at Origin Consulting Group is here to assist.</p>
+          <p className="text-md max-w-[500px]">We&apos;d love to hear from you! Whether you have questions about our services, need advice, or want to explore how we can help your business grow, our team at Valtix Consulting is here to assist.</p>
         </div>
       </div>
       <div className="w-full">

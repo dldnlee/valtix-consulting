@@ -15,23 +15,23 @@ import 'swiper/css/effect-fade';
 const slideContents = [
   {
     bgImage: 'gradient-with-bg-1',
-    heading: 'Get help from our expert consultants.',
-    subHeading: 'Get help from our expert consultants to achieve transformative results. We provide insightful guidance and actionable plans to help you navigate complex challenges and seize new opportunities.',
+    heading: 'Your Success, Our Mission',
+    subHeading: 'Partner with us for strategic insights and customized solutions that drive real growth. Connect with our team today to see how Valtix Consulting can help you reach your goals.',
     route: '/contact',
     btnText:'Learn More'
   },
   {
     bgImage: 'gradient-with-bg-2',
-    heading: 'Digital Transformation.',
-    subHeading: 'In the digital age, staying competitive requires embracing technology. Our Digital Transformation services integrate cutting-edge technologies like AI and IoT to revolutionize your operations and create new value propositions.',
+    heading: 'Expert Services, Exceptional Results',
+    subHeading: 'Discover our full range of consulting solutions designed to elevate your business to new heights. We combine industry knowledge with a personal touch to deliver results that matter.',
     route: '/services',
     btnText:'Learn More'
   },
   {
     bgImage: 'gradient-with-bg-3',
-    heading: 'Startup Advisory at your hands.',
-    subHeading: 'Our Startup Advisory service empowers emerging businesses to carve out their niche and scale effectively in competitive markets. By partnering with us, you gain access to expert advice tailored to the unique challenges and opportunities faced by startups.',
-    route: '/services',
+    heading: 'Built on Trust, Driven by Results',
+    subHeading: "Learn more about the Valtix Consulting team and our unwavering commitment to your success. We're here to help you build a future founded on strong strategy and real impact.",
+    route: '/about',
     btnText:'Learn More'
   },
 ]

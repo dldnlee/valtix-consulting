@@ -25,12 +25,18 @@ const config: Config = {
       },
       keyframes: {
         'infinite-scroll': {
-            from: { transform: 'translateX(0)' },
-            to: { transform: 'translateX(-100%)' },
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        'standby-hover': {
+          '0%' : {transform: 'translateY(0)'},
+          '50%' : {transform: 'translateY(5%)'},
+          '100%' : {transform: 'translateY(0)'},
         }
       },    
       animation: {
         'infinite-scroll': 'infinite-scroll 60s linear infinite',
+        'standby-hover': 'standby-hover 6s linear infinite'
       },
       colors: {
         "gray-1": "#353535",

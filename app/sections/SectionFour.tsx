@@ -2,7 +2,7 @@ import SlidingBanner from "./components/SlidingBanner"
 
 const reviews = [
   {
-    review: "\"Origin Consulting transformed our business strategy, driving impressive growth and efficiency. Highly recommended!\""
+    review: "\"Valtix Consulting transformed our business strategy, driving impressive growth and efficiency. Highly recommended!\""
   },
   {
     review: "\"Their personalized approach and deep understanding of our needs made a significant difference. Outstanding service!\""
@@ -11,10 +11,10 @@ const reviews = [
     review: "\"The team's innovative solutions and agile methods have taken our company to new heights. Exceptional consulting.\""
   },
   {
-    review: "\"Origin Consulting's commitment to excellence and client satisfaction is evident in every interaction. Top-notch professionals.\""
+    review: "\"Valtix Consulting's commitment to excellence and client satisfaction is evident in every interaction. Top-notch professionals.\""
   },
   {
-    review: "\"Origin Consulting's sector-specific expertise and personalized approach make them stand out.\""
+    review: "\"Valtix Consulting's sector-specific expertise and personalized approach make them stand out.\""
   },
 ]
 

@@ -13,15 +13,15 @@ const catalogue = [
     link: '/services/startup-advisory'
   },
   {
-    title: 'Growth Strategy for Medium Enterprises',
+    title: 'Hyper-Personalized Growth Roadmaps',
     link: '/services/medium-enterprise'
   },
   {
-    title: 'Operational Efficiency',
+    title: 'Business Continuity and Crisis Management for Startups ',
     link: '/services/operational-efficiency'
   },
   {
-    title: 'Digital Transformation', 
+    title: 'Accelerated Digital Transformation for Emerging Markets ', 
     link: '/services/digital-transformation'
   },
   {
@@ -32,8 +32,8 @@ const catalogue = [
 
 function ServiceBlock({title, link} : {title:string, link:string}) {
   return (
-    <Link href={link} className="border 2xl:w-[400px] max-w-[400px] 2xl:h-[200px] p-5 px-10 border-black/50 flex flex-col gap-5 bg-white transition-all hover:shadow-md hover:scale-[101%] group">
-      <h3 className="2xl:text-2xl text-xl group-hover:font-semibold transition-all 2xl:h-[100px] 2xl:w-[400px]">{title}</h3>
+    <Link href={link} className="border 2xl:w-[400px] max-w-[400px] 2xl:h-[250px] p-5 px-10 border-black/50 flex flex-col gap-5 bg-white transition-all hover:shadow-md hover:scale-[101%] items-between group">
+      <h3 className="2xl:text-xl text-lg group-hover:font-semibold transition-all 2xl:h-[300px] 2xl:w-[300px]">{title}</h3>
       <hr  className="border-black/20"/>
       <p className="flex gap-5 text-lg items-center">
         Learn More

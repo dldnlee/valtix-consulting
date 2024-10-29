@@ -1,4 +1,4 @@
-import mockup from '@/app/assets/images/origin-logo-mockup.webp'
+import mockup from '@/app/assets/images/valtix-logo-mockup.webp'
 import Image from 'next/image'
 
 const sellingPoints = [
@@ -39,11 +39,11 @@ export default function SectionThree() {
   return (
     <div className="bg-black-pattern-2 bg-cover bg-center bg-no-repeat flex flex-col gap-14 py-[100px] items-center 2xl:p-default-padding p-medium-padding lg:py-[100px] bg-gray-1 text-white">
       <div className="w-fit text-center flex flex-col justify-center items-center gap-4">
-        <h2 className="2xl:text-3xl text-xl font-extrabold text-beige border-b-4 border-beige">Why choose us?</h2>
-        <p className="max-w-[600px]">Origin Consulting Group stands out for its specialized focus on startups and medium-sized businesses, combining sector-specific insights with a personalized approach to consulting.</p>
+        <h2 className="2xl:text-3xl text-xl font-bold text-beige">Why choose us?</h2>
+        <p className="max-w-[600px]">Valtix Consulting stands out for its specialized focus on startups and medium-sized businesses, combining sector-specific insights with a personalized approach to consulting.</p>
       </div>
       <div className="w-full h-full flex 2xl:flex-row flex-col gap-20 justify-center items-center">
-        <Image src={mockup} alt="Origin Logo Mockup on a counter" width={723} height={436}/>
+        <Image src={mockup} alt="Valtix Logo Mockup on a counter" width={723} height={436}/>
         
         <div className="flex flex-col gap-14">
           {

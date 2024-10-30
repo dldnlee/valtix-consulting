@@ -4,9 +4,9 @@ import Image, { StaticImageData } from 'next/image'
 
 function FounderCard() {
   return (
-    <div className='flex 2xl:flex-row flex-col items-center 2xl:shadow-lg 2xl:w-[1100px] bg-gray-1 text-white'>
-      <Image src={maykel} alt="" className='w-[400px]'/>
-      <div className='flex flex-col gap-2 2xl:p-20 pt-10'>
+    <div className='flex 2xl:flex-row flex-col items-center 2xl:shadow-lg 2xl:w-[1100px] bg-gray-1 text-white 2xl-rounded-none rounded-xl'>
+      <Image src={maykel} alt="" className='w-[400px] 2xl-rounded-none rounded-t-xl'/>
+      <div className='flex flex-col gap-2 2xl:p-20 pt-10 p-5'>
         <div className='flex flex-col gap-1'>
           <h2 className='2xl:text-xl text-lg font-extrabold'>Maykel Soeharto, DipFA</h2>
           <h3 className='2xl:text-lg text-md font-bold'>Managing Director & Senior Partner</h3>

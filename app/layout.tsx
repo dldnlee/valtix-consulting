@@ -5,8 +5,8 @@ import { figtree } from "./fonts";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Origin Consulting",
-  description: "Origin Consulting Group Website",
+  title: "Valtix Consutling",
+  description: "Valtix Consulting Website",
 };
 
 

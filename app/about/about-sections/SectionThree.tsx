@@ -26,7 +26,7 @@ function FounderCard() {
 
 export default function SectionThree() {
   return (
-    <div className="flex flex-col items-center justify-center lg:p-default-padding p-medium-padding 2xl:gap-20 gap-10 lg:py-[120px] md:py-[120px] bg-white">
+    <div className="flex flex-col items-center justify-center p-medium-padding 2xl:gap-20 gap-10 lg:py-[120px] md:py-[120px] bg-white">
       <div className="text-center">
         <h2 className="font-bold 2xl:text-3xl text-xl">Valtix Defined</h2>
         <p className="2xl:w-[600px] 2xl:text-md text-sm">The driving force behind innovative solutions and strategic growth. Our consultants are here to empower your business and deliver exceptional results.</p>

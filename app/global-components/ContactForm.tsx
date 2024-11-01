@@ -3,6 +3,8 @@ import location from '@/app/assets/icons/location.png'
 import email from '@/app/assets/icons/email.png'
 import { StaticImageData } from 'next/image'
 import Image from 'next/image'
+import { useState } from 'react'
+import check from '@/app/assets/icons/check.png'
 
 const contactInfo = [
   {
@@ -37,6 +39,7 @@ function InfoContainer() {
 }
 
 function SubForm() {
+  const [active, setActive] = useState(true);
 
   async function handleSubmit(event : any) {
     event.preventDefault();
@@ -53,6 +56,7 @@ function SubForm() {
         }
         const responseData = await response.json();
         console.log(responseData['message'])
+        setActive(false);
 
         alert('Message successfully sent');
     } catch (err) {
@@ -62,7 +66,14 @@ function SubForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='2xl:w-[60%] 2xl:p-10 p-5 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
+    <form onSubmit={handleSubmit} className='relative 2xl:w-[60%] 2xl:p-10 p-5 gap-10 flex flex-col rounded-e-xl bg-white text-black'>
+      <div className={`${active ? "hidden" : "flex"} absolute top-0 left-0 w-full h-full backdrop-blur-lg items-center justify-center flex-col gap-10`}>
+        <Image src={check} alt="Check Mark" className='w-[50px]' /> 
+        <div className='flex items-center justify-center flex-col text-lg font-semibold'>
+          <p>Thanks for reaching out! </p>
+          <p>We will get in touch with you shortly.</p>
+        </div>
+      </div>
       <label htmlFor="name" className='flex flex-col'>Full Name
         <input required type="text" id='name' name='name' placeholder='John Doe' className='p-4 bg-gray-200' />
       </label>
@@ -90,7 +101,7 @@ export function ContactForm() {
       <div className="2xl:w-[40%] bg-gray-1 gap-5 text-white p-8 flex flex-col justify-between 2xl:rounded-s-xl 2xl:rounded-tr-none rounded-t-xl">
         <div>
           <h1 className='2xl:text-2xl text-lg font-semibold'>Contact Information</h1>
-          <p className='text-md'>We are always excited to assist you!</p>
+          <p className='text-lg'>We are always excited to assist you!</p>
         </div>
         <InfoContainer />
       </div>

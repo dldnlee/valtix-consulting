@@ -1,32 +1,36 @@
 import SlidingBanner from "./components/SlidingBanner"
+import Image from "next/image"
+import partner1 from "@/app/assets/icons/partner-logos/craves_logo.png";
+import partner2 from "@/app/assets/icons/partner-logos/milieu_logo.png";
+import partner3 from "@/app/assets/icons/partner-logos/gro_logo.png";
+import partner4 from "@/app/assets/icons/partner-logos/lua_logo.png";
 
-const reviews = [
+
+const partnerLogos = [
   {
-    review: "\"Valtix Consulting transformed our business strategy, driving impressive growth and efficiency. Highly recommended!\""
+    logo: partner1
   },
   {
-    review: "\"Their personalized approach and deep understanding of our needs made a significant difference. Outstanding service!\""
+    logo: partner2
   },
   {
-    review: "\"The team's innovative solutions and agile methods have taken our company to new heights. Exceptional consulting.\""
+    logo: partner3
   },
   {
-    review: "\"Valtix Consulting's commitment to excellence and client satisfaction is evident in every interaction. Top-notch professionals.\""
-  },
-  {
-    review: "\"Valtix Consulting's sector-specific expertise and personalized approach make them stand out.\""
+    logo: partner4
   },
 ]
 
 export default function SectionFour() {
   return (
     <div className="w-full flex flex-col 2xl:gap-10 gap-5 items-center justify-center bg-white 2xl:py-10 py-5 bg-gradient-to-r from-gray-3 via-white to-gray-3">
-      <h2 className="font-extrabold 2xl:text-2xl text-gray-1">Reviews from our partners</h2>
+      <h2 className="font-extrabold 2xl:text-3xl text-xl text-gray-1">Our Partners</h2>
       <SlidingBanner>
         {
-          reviews.map((item, index) => (
-            <li key={index} className="2xl:w-[400px] w-[200px] font-extrabold 2xl:text-md text-sm text-gray-2">
-              <p>{item.review}</p>
+          partnerLogos.map((item, index) => (
+            <li key={index} className=" font-extrabold 2xl:text-md text-sm text-gray-2">
+              <Image src={item.logo} alt="Partner Logo" className="2xl:w-[200px] w-[100px]"/>
+              {/* <p>{item.review}</p> */}
             </li>
           ))
         }

@@ -8,7 +8,7 @@ function FounderCard() {
       <Image src={maykel} alt="" className='w-[400px] 2xl-rounded-none rounded-t-xl'/>
       <div className='flex flex-col gap-2 2xl:p-20 pt-10 p-5'>
         <div className='flex flex-col gap-1'>
-          <h2 className='2xl:text-xl text-lg font-extrabold'>Maykel Soeharto, DipFA</h2>
+          <h2 className='2xl:text-xl text-lg font-extrabold'>Maykel Soeharto</h2>
           <h3 className='2xl:text-lg text-md font-bold'>Managing Director & Senior Partner</h3>
         </div>
         <div className='flex flex-col gap-5 max-w-[600px]'>
